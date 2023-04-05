@@ -23,6 +23,7 @@ if (mode !== null) {
     document.documentElement.toggleAttribute('data-dark-mode');
     localStorage.setItem('theme', document.documentElement.hasAttribute('data-dark-mode') ? 'dark' : 'light');
 
+    __updateUrlImg();
   });
 
   if (localStorage.getItem('theme') === 'dark') {
@@ -35,11 +36,8 @@ if (mode !== null) {
 
   }
 
-}
-
-__updateUrlImg();
-document.getElementById('mode').onclick = function () {
   __updateUrlImg();
+
 }
 
 function __updateUrlImg() {
