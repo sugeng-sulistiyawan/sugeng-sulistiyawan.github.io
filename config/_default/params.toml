@@ -68,13 +68,13 @@ fillImage = "1270x740 Center" # normalize image size
 footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\" target=\"_blank\" rel=\"noopener\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\" target=\"_blank\" rel=\"noopener\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\" target=\"_blank\" rel=\"noopener\">Doks</a>"
 
 # Feed
-copyRight = "Copyright © 2023 <a class=\"text-muted fw-bold\" href=\"/\">Sugeng Sulistiyawan</a>"
+copyRight = "Copyright © 2023 <a class=\"text-muted\" href=\"/\"><strong>Sugeng Sulistiyawan</strong></a>"
 
 # Alert
 alert = true
 alertDismissable = false
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Hello, World! Memiliki IDE, Proyek dan ingin bekerjasama dengan saya? Langsung japri saya via <a class=\"alert-link stretched-link\" href=\"https://wa.me/62816658056\" target=\"_blank\" rel=\"noopener\">Whatsapp</a>!"
+# alertText = "Hello, World! Memiliki IDE, Proyek dan ingin bekerjasama dengan saya? Langsung japri saya via <a class=\"alert-link stretched-link\" href=\"https://wa.me/62816658056\" target=\"_blank\" rel=\"noopener\">Whatsapp</a>!"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
