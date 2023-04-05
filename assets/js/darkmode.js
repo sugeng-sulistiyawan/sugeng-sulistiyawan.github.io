@@ -48,13 +48,18 @@ function __updateUrlImg() {
   let isDark = localStorage.getItem('theme') === 'dark';
   for (let i = 0; i < themesL.length; i++) {
     let elemL = themesL[i];
-    let elemD = themesD[i];
     if (isDark) {
       elemL.style.display = 'none';
+    } else {
+      elemL.style.display = '';
+    }
+  }
+  for (let i = 0; i < themesD.length; i++) {
+    let elemD = themesD[i];
+    if (isDark) {
       elemD.style.display = '';
     } else {
       elemD.style.display = 'none';
-      elemL.style.display = '';
     }
   }
 }
