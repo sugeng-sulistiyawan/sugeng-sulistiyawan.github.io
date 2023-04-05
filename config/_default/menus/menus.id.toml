@@ -45,24 +45,24 @@
   weight = 20
 
 [[main]]
-  name = "Get Started"
+  name = "Open Source"
   weight = 30
-  identifier = "get-started"
-  url = "/docs/prologue/introduction/"
+  identifier = "opensource"
+  url = "/docs/opensource"
 
 [[main]]
   name = "Quick Start"
   weight = 40
   identifier = "quick-start"
   url = "/docs/prologue/quick-start/"
-  parent = "get-started"
+  parent = "opensource"
 
 [[main]]
   name = "Tutorial"
   weight = 50
   identifier = "tutorial"
   url = "https://getdoks.org/tutorial/introduction/"
-  parent = "get-started"
+  parent = "opensource"
 
 [[social]]
   name = "GitHub"
