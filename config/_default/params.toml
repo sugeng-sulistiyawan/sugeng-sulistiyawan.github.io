@@ -45,7 +45,7 @@ siteLinksSearchBox = false
 ## Chrome Browser
 themeColor = "#fff"
 
-# Images - Temporarily left in place for backward compatibility
+# Images
 quality = 85
 bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
