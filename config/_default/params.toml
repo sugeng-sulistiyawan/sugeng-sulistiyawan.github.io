@@ -1,9 +1,9 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "SS"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
+titleAddition = "Sugeng Sulistiyawan"
 description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
 
 ## Documentation
@@ -20,8 +20,8 @@ twitterSite = "@getdoks"
 twitterCreator = "@henkverlinde"
 
 ## JSON-LD
-# schemaType = "Person"
-schemaType = "Organization"
+schemaType = "Person"
+# schemaType = "Organization"
 schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
 schemaAuthorTwitter = "https://twitter.com/henkverlinde"
