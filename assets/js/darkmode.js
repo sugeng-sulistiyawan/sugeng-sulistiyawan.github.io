@@ -36,3 +36,25 @@ if (mode !== null) {
   }
 
 }
+
+__updateUrlImg();
+document.getElementById('mode').onclick = function () {
+  __updateUrlImg();
+}
+
+function __updateUrlImg() {
+  let themesL = document.querySelectorAll('.col-img-light');
+  let themesD = document.querySelectorAll('.col-img-dark');
+  let isDark = localStorage.getItem('theme') === 'dark';
+  for (let i = 0; i < themesL.length; i++) {
+    let elemL = themesL[i];
+    let elemD = themesD[i];
+    if (isDark) {
+      elemL.style.display = 'none';
+      elemD.style.display = '';
+    } else {
+      elemD.style.display = 'none';
+      elemL.style.display = '';
+    }
+  }
+}
