@@ -25,7 +25,7 @@
   package = "netlify-plugin-submit-sitemap"
 
 	[plugins.inputs]
-    baseUrl = "https://doks.netlify.app/"
+    baseUrl = "https://sugeng-sulistiyawan.github.io/"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
     providers = [
@@ -39,4 +39,4 @@
   targetPort = 1313
   port = 8888
   publish = "public"
-  autoLaunch = false
+  autoLaunch = true
