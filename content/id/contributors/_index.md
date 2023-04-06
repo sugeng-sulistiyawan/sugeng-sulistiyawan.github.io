@@ -1,10 +1,10 @@
 ---
 title: "Contributors"
-description: "The Doks contributors."
-date: 2020-10-06T08:50:29+00:00
-lastmod: 2020-10-06T08:50:29+00:00
+description: "My Portfolio contributors."
+date: 2023-04-06T13:07:26+07:00
+lastmod: 2023-04-06T13:07:29+07:00
 draft: false
 images: []
 ---
 
-The Doks contributors.
+My Portfolio contributors.

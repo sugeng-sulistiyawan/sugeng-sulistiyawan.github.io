@@ -17,4 +17,23 @@
   translation: "Browse"
 
 - id: alert-text
-  translation: "Hello, World! Memiliki IDE, Proyek dan ingin bekerjasama dengan saya? Langsung hubungi saya via <a class=\"alert-link stretched-link\" href=\"https://wa.me/62816658056\" target=\"_blank\" rel=\"noopener\">Whatsapp</a>!"
+  translation: 'Hello, World! Memiliki IDE, Proyek dan ingin bekerjasama dengan saya? Langsung hubungi saya via <a class="alert-link stretched-link" href="https://wa.me/62816658056" target="_blank" rel="noopener">Whatsapp</a>!'
+
+# Blog Meta
+- id: 'blog-meta-posted'
+  translation: 'Publikasi'
+
+- id: 'blog-meta-in'
+  translation: 'pada'
+
+- id: 'blog-meta-on'
+  translation: 'tanggal'
+
+- id: 'blog-meta-by'
+  translation: 'oleh'
+
+- id: 'blog-meta-and'
+  translation: 'dan'
+
+- id: 'blog-meta-min-read'
+  translation: 'mnt dibaca'

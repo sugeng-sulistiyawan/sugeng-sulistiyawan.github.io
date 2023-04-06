@@ -18,3 +18,22 @@
 
 - id: alert-text
   translation: "Hello, World! Have an IDE, Project and want to work with me? Contact me directly via <a class=\"alert-link stretched-link\" href=\"https://wa.me/62816658056\" target=\"_blank\" rel=\"noopener\">Whatsapp</a>!"
+
+# Blog Meta
+- id: 'blog-meta-posted'
+  translation: 'Posted'
+
+- id: 'blog-meta-in'
+  translation: 'in'
+
+- id: 'blog-meta-on'
+  translation: 'on'
+
+- id: 'blog-meta-by'
+  translation: 'by'
+
+- id: 'blog-meta-and'
+  translation: 'and'
+
+- id: 'blog-meta-min-read'
+  translation: 'min read'
