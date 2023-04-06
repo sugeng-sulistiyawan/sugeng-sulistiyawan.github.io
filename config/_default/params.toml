@@ -12,7 +12,7 @@ description = "Mengalir Laksana Air, Menerjang Laksana Ombak."
 ## Open Graph
 images = ["og.png"]
 ogLocale = "id_ID"
-domainTLD = "sugeng-sulistiyawan.github.io"
+domainTLD = "sugengsulistiyawan.my.id"
 titleHome = "Sugeng Sulistiyawan"
 
 ## Twitter Cards
