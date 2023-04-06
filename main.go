@@ -121,7 +121,7 @@ func main() {
 
 	for _, element := range simpleIcons {
 		fileUrl := "https://cdn.simpleicons.org/"
-		fileSave := "static/images/svg/"
+		fileSave := "static/images/icons/"
 		err := DownloadFile(fileSave+element+".svg", fileUrl+element)
 		if err == nil {
 			fmt.Println("Downloaded: " + fileUrl + element)
