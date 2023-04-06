@@ -75,7 +75,21 @@ func main() {
 		"microsoftvisio",
 		"mongodb",
 		"mysql",
-		// "nnnnnnn",
+		"nodedotjs",
+		"notion",
+		"npm",
+		"obsstudio",
+		"packagist",
+		"perl",
+		"php",
+		"postgresql",
+		"postcss",
+		"prestashop",
+		"prisma",
+		"nnnnnnn",
+		"nnnnnnn",
+		"nnnnnnn",
+		"nnnnnnn",
 	}
 
 	for _, element := range simpleIcons {

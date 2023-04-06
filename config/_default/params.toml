@@ -98,7 +98,7 @@ lastMod = false
   searchSectionsIndex = ["blog", "docs"]
   darkMode = true
   bootStrapJs = true
-  breadCrumb = true
+  breadCrumb = false
   highLight = true
   kaTex = false
   multilingualMode = true
@@ -106,7 +106,7 @@ lastMod = false
   fullWidth = false
   navbarSticky = true
   toTopButton = false
-  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
+  scrollSpy = true # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
   [menu.section]
