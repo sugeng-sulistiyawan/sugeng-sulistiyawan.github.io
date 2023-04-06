@@ -100,13 +100,13 @@ lastMod = false
   bootStrapJs = true
   breadCrumb = true
   highLight = true
-  kaTex = true
+  kaTex = false
   multilingualMode = true
   docsVersioning = false
   fullWidth = false
   navbarSticky = true
   toTopButton = false
-  scrollSpy = true # experimental; needs Bootstrap >= 5.2.0-beta1
+  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
   [menu.section]
