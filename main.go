@@ -86,20 +86,46 @@ func main() {
 		"postcss",
 		"prestashop",
 		"prisma",
-		"nnnnnnn",
-		"nnnnnnn",
-		"nnnnnnn",
-		"nnnnnnn",
+		"prezi",
+		"prometheus",
+		"protodotio",
+		"pwa",
+		"pusher",
+		"python",
+		"raspberrypi",
+		"react",
+		"redis",
+		"sass",
+		"semver",
+		"sketchup",
+		"socketdotio",
+		"stackblitz",
+		"swagger",
+		"symfony",
+		"tailwindcss",
+		"travisci",
+		"trello",
+		"twilio",
+		"typescript",
+		"vite",
+		"visualstudiocode",
+		"vuedotjs",
+		"webgl",
+		"webrtc",
+		"wordpress",
+		"xampp",
+		"yarn",
+		"kicad",
+		"yiiframework",
 	}
 
 	for _, element := range simpleIcons {
 		fileUrl := "https://cdn.simpleicons.org/"
-		fileSave := "assets/images/svg/"
+		fileSave := "static/images/svg/"
 		err := DownloadFile(fileSave+element+".svg", fileUrl+element)
-		if err != nil {
-			panic(err)
+		if err == nil {
+			fmt.Println("Downloaded: " + fileUrl + element)
 		}
-		fmt.Println("Downloaded: " + fileUrl + element)
 	}
 }
 
@@ -109,6 +135,9 @@ func DownloadFile(filepath string, url string) error {
 
 	// Get the data
 	resp, err := http.Get(url)
+	if resp.StatusCode == 404 {
+		return nil
+	}
 	if err != nil {
 		return err
 	}
