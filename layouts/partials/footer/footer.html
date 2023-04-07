@@ -1,13 +1,17 @@
-<footer class="footer text-muted mt-5">
+<footer class="footer text-muted mt-3">
   <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} text-center">
 
     <div class="fs-6">
-        Copyright © {{ now.Year }} <a class="text-dark" href="{{ "" | absURL }}"><strong>{{ .Site.Params.Title }}</strong></a>. {{ .Site.Params.footer | safeHTML }}.
+      Copyright © {{ now.Year }} <a class="text-dark"
+        href="{{ "" | absURL }}"><strong>{{ .Site.Params.Title }}</strong></a>.
+      <div class="d-block d-md-inline-block">
+        {{ .Site.Params.footer | safeHTML }}.
+      </div>
     </div>
 
     <ul class="list-inline">
       {{ range .Site.Menus.footer -}}
-        <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{ end -}}
     </ul>
 
