@@ -219,7 +219,8 @@ button#doks-versions {
   padding-left: 0.3125rem;
   font-size: $font-size-base * 0.75;
   color: $gray-700;
-  content: "Ctrl + /";
+  // content: "Ctrl + /";
+  content: "/";
   border: 1px solid $gray-300;
   border-radius: 0.25rem;
 
@@ -352,7 +353,10 @@ button#doks-versions {
   margin: 0 0 0 -0.625rem;
 
   /* position: relative; */
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .navbar .menu-icon .navicon {

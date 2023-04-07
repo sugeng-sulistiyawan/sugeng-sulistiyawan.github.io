@@ -23,7 +23,8 @@ Please keep it in place.
 
 ## Keyboard shortcuts for search?
 
-- focus: `Ctrl + /`
+<!-- - focus: `Ctrl + /` -->
+- focus: `/`
 - select: `↓` and `↑`
 - open: `Enter`
 - close: `Esc`

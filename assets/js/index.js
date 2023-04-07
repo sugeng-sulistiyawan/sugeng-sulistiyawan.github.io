@@ -6,7 +6,8 @@ if (search !== null) {
 }
 
 function inputFocus(e) {
-  if (e.ctrlKey && e.key === '/' ) {
+  // if (e.ctrlKey && e.key === '/' ) {
+  if (e.key === '/' ) {
     e.preventDefault();
     search.focus();
   }
