@@ -1,7 +1,7 @@
 {
   "main": [{
-      "stat": "https://github-readme-stats.vercel.app/api?username=sugeng-sulistiyawan&show_icons=true&include_all_commits=true&count_private=true&card_width=400",
-      "col": "col-lg-9",
+      "stat": "https://github-readme-stats.vercel.app/api?username=sugeng-sulistiyawan&show_icons=true&include_all_commits=true&count_private=true&card_width=500",
+      "col": "col-lg-8",
       "class": "w-100"
     },
     {
