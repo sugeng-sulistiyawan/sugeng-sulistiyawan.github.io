@@ -348,6 +348,10 @@
     "id": "jss",
     "title": "JSS",
     "url": ""
+  }, {
+    "id": "docusaurus",
+    "title": "Docusaurus",
+    "url": "https://docusaurus.io/"
   }],
   "software": [{
     "id": "visualstudiocode",
