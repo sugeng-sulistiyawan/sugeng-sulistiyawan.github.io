@@ -2,11 +2,7 @@
   <div class="container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} text-center">
 
     <div class="fs-6">
-      {{ if .Site.Params.copyRight }}
-        {{ .Site.Params.copyRight | safeHTML }}. {{ .Site.Params.footer | safeHTML }}.
-      {{ else }}
-        Copyright © {{ now.Year }} <a class="text-primary" href="{{ "" | absURL }}"><strong>{{ .Site.Params.Title }}</strong></a>. {{ .Site.Params.footer | safeHTML }}.
-      {{ end }}
+        Copyright © {{ now.Year }} <a class="text-light" href="{{ "" | absURL }}"><strong>{{ .Site.Params.Title }}</strong></a>. {{ .Site.Params.footer | safeHTML }}.
     </div>
 
     <ul class="list-inline">
