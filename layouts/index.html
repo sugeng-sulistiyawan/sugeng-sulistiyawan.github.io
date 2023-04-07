@@ -19,7 +19,7 @@
         target="_blank" rel="noopener">here</a>
 
       <div class="mt-2">
-        <ul class="nav flex-column flex-lg-row justify-content-center">
+        <ul class="nav flex-row justify-content-center">
           {{ range $soc := sort (index .Site.Params "social") "weight" "asc" }}
           <li class="nav-item">
             <a class="nav-link social-link text-dark" href="{{ $soc.url }}" target="_blank" rel="noopener"
