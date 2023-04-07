@@ -23,7 +23,7 @@ if (mode !== null) {
     document.documentElement.toggleAttribute('data-dark-mode');
     localStorage.setItem('theme', document.documentElement.hasAttribute('data-dark-mode') ? 'dark' : 'light');
 
-    __updateUrlImg();
+    __updateImageMode();
   });
 
   if (localStorage.getItem('theme') === 'dark') {
@@ -36,13 +36,13 @@ if (mode !== null) {
 
   }
 
-  __updateUrlImg();
+  __updateImageMode();
 
 }
 
-function __updateUrlImg() {
-  let themesL = document.querySelectorAll('.col-img-light');
-  let themesD = document.querySelectorAll('.col-img-dark');
+function __updateImageMode() {
+  let themesL = document.querySelectorAll('.img-show-light');
+  let themesD = document.querySelectorAll('.img-show-dark');
   let isDark = localStorage.getItem('theme') === 'dark';
   for (let i = 0; i < themesL.length; i++) {
     let elemL = themesL[i];

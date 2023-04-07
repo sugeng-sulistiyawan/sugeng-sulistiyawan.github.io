@@ -2,7 +2,7 @@
 <section class="section container-fluid mt-n3 pb-3">
   <div class="row justify-content-center align-items-center gap-3">
     <div class="col-lg-12 text-center">
-      <h1 class="mt-0">Hello, World!</h1>
+      <h1 class="mt-0 mb-3">Hello, World!</h1>
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
@@ -19,54 +19,90 @@
         target="_blank" rel="noopener">here</a>
     </div>
 
-    <div class="col-lg-12 text-center">
+    <div class="col-lg-16 text-center mb-4">
 
-      <h3 class="mb-4"><strong>Technology, Language and Tools I Use</strong></h3>
+      <h3 class="mb-3"><strong>Technology, Language and Tools I Use</strong></h3>
 
-      {{ range $technology := sort (index $.Site.Data "technologies") "id" "asc" }}
+      <div class="row justify-content-center">
 
-      {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
+        <div class="col-lg-4">
+          <h5 class="mb-3"><strong>Languages</strong></h5>
+          {{ range $technology := sort (index $.Site.Data "technologies" "languages") "id" "asc" }}
 
-      {{ $url := "#" }}
-      {{ $target := "_self" }}
-      {{ if $technology.url }}
-      {{ $url = $technology.url }}
-      {{ $target = "_blank" }}
-      {{ end }}
+          {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
 
-      <a href="{{ $url }}" target="{{ $target }}" rel="noopener" title="{{ $technology.title }}"
-        class="d-inline-block m-1">
-        <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
-      </a>
+          {{ $url := "#" }}
+          {{ $target := "_self" }}
+          {{ if $technology.url }}
+          {{ $url = $technology.url }}
+          {{ $target = "_blank" }}
+          {{ end }}
 
-      {{ end }}
+          <a href="{{ $url }}" target="{{ $target }}" rel="noopener" title="{{ $technology.title }}"
+            class="d-inline-block m-1">
+            <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
+          </a>
+
+          {{ end }}
+        </div>
+        <div class="col-sm-10 col-lg-7">
+          <h5 class="mb-3"><strong>Framework & Tools</strong></h5>
+          {{ range $technology := sort (index $.Site.Data "technologies" "framework-tools") "id" "asc" }}
+
+          {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
+
+          {{ $url := "#" }}
+          {{ $target := "_self" }}
+          {{ if $technology.url }}
+          {{ $url = $technology.url }}
+          {{ $target = "_blank" }}
+          {{ end }}
+
+          <a href="{{ $url }}" target="{{ $target }}" rel="noopener" title="{{ $technology.title }}"
+            class="d-inline-block m-1">
+            <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
+          </a>
+
+          {{ end }}
+        </div>
+        <div class="col-sm-6 col-lg-5">
+          <h5 class="mb-3"><strong>Software & Technology</strong></h5>
+          {{ range $technology := sort (index $.Site.Data "technologies" "software") "id" "asc" }}
+
+          {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
+
+          {{ $url := "#" }}
+          {{ $target := "_self" }}
+          {{ if $technology.url }}
+          {{ $url = $technology.url }}
+          {{ $target = "_blank" }}
+          {{ end }}
+
+          <a href="{{ $url }}" target="{{ $target }}" rel="noopener" title="{{ $technology.title }}"
+            class="d-inline-block m-1">
+            <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
+          </a>
+
+          {{ end }}
+        </div>
+      </div>
 
     </div>
   </div>
 
-  <div class="row justify-content-center align-items-center gap-3 col-img-light" style="display: none;">
-    <div class="col-lg-6">
-      <img
-        src="https://github-readme-stats.vercel.app/api?username=sugeng-sulistiyawan&show_icons=true&include_all_commits=true&hide_border=true&theme=buefy"
-        class="w-100" />
+  <div class="row justify-content-center align-items-center gap-3">
+
+    {{ range $main := index $.Site.Data "stats" "main" }}
+
+    <div class="{{ $main.col }}">
+      <img src="{{ $main.stat }}&hide_border=true&theme=buefy&bg_color=ffffff" class="{{ $main.class }} img-show-light"
+        style="display: none;" />
+      <img src="{{ $main.stat }}&hide_border=true&theme=dark&bg_color=212529" class="{{ $main.class }} img-show-dark"
+        style="display: none;" />
     </div>
-    <div class="col-lg-6">
-      <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=sugeng-sulistiyawan&layout=compact&hide_border=true&theme=buefy"
-        class="w-100" />
-    </div>
-  </div>
-  <div class="row justify-content-center align-items-center gap-3 col-img-dark" style="display: none;">
-    <div class="col-lg-6">
-      <img
-        src="https://github-readme-stats.vercel.app/api?username=sugeng-sulistiyawan&show_icons=true&include_all_commits=true&hide_border=true&theme=dark"
-        class="w-100" />
-    </div>
-    <div class="col-lg-6">
-      <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=sugeng-sulistiyawan&layout=compact&hide_border=true&theme=dark"
-        class="w-100" />
-    </div>
+
+    {{ end }}
+
   </div>
 
   <div class="text-center mb-5">
@@ -74,113 +110,35 @@
     <h3 class="mt-5"><strong>Top Repositories</strong></h3>
   </div>
 
-  <div class="row justify-content-center align-items-center gap-3 col-img-light" style="display: none;">
+  <div class="row justify-content-center align-items-center gap-3">
+
+    {{ range $top := index $.Site.Data "stats" "top" }}
+
     <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/sugeng-sulistiyawan.github.io" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=sugeng-sulistiyawan.github.io&hide_border=true&theme=yeblu"
-          class="w-100" />
+      <a href="{{ $top.url }}" target="_blank" rel="noopener">
+        <img src="{{ $top.stat }}&hide_border=true&theme=yeblu" class="w-100 img-show-light" style="display: none;" />
+        <img src="{{ $top.stat }}&hide_border=true&theme=swift" class="w-100 img-show-dark" style="display: none;" />
       </a>
     </div>
+
+    {{ end }}
 
     <div class="clearfix"></div>
 
+    {{ range $pin := index $.Site.Data "stats" "pin" }}
+
     <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-toastr" target="_blank" rel="noopener">
+      <a href="https://github.com/sugeng-sulistiyawan/{{ $pin }}" target="_blank" rel="noopener">
         <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-toastr&hide_border=true&theme=swift"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-dropify" target="_blank" rel="noopener">
+          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=swift"
+          class="w-100 img-show-light" style="display: none;" />
         <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-dropify&hide_border=true&theme=swift"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-aws-s3" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-aws-s3&hide_border=true&theme=swift"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-seeder" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-seeder&hide_border=true&theme=swift"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-slick" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-slick&hide_border=true&theme=swift"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-barcode-generator" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-barcode-generator&hide_border=true&theme=swift"
-          class="w-100" />
-      </a>
-    </div>
-  </div>
-  <div class="row justify-content-center align-items-center gap-3 col-img-dark" style="display: none;">
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/sugeng-sulistiyawan.github.io" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=sugeng-sulistiyawan.github.io&hide_border=true&theme=swift"
-          class="w-100" />
+          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=aura"
+          class="w-100 img-show-dark" style="display: none;" />
       </a>
     </div>
 
-    <div class="clearfix"></div>
-
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-toastr" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-toastr&hide_border=true&theme=aura"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-dropify" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-dropify&hide_border=true&theme=aura"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-aws-s3" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-aws-s3&hide_border=true&theme=aura"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-seeder" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-seeder&hide_border=true&theme=aura"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-slick" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-slick&hide_border=true&theme=aura"
-          class="w-100" />
-      </a>
-    </div>
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/yii2-barcode-generator" target="_blank" rel="noopener">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo=yii2-barcode-generator&hide_border=true&theme=aura"
-          class="w-100" />
-      </a>
-    </div>
+    {{ end }}
   </div>
 
 </section>

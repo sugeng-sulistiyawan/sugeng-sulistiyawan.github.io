@@ -1,541 +1,433 @@
-[{
-    "id": "adobe",
-    "title": "Adobe",
-    "url": ""
-  },
-  {
-    "id": "amazonaws",
-    "title": "Amazon AWS",
-    "url": ""
-  },
-  {
-    "id": "amazons3",
-    "title": "Amazon S3",
-    "url": ""
-  },
-  {
-    "id": "androidstudio",
-    "title": "Android Studio",
-    "url": ""
-  },
-  {
-    "id": "arduino",
-    "title": "Arduino",
-    "url": ""
-  },
-  {
-    "id": "bower",
-    "title": "Bower",
-    "url": ""
-  },
-  {
-    "id": "bootstrap",
-    "title": "Bootstrap",
-    "url": ""
-  },
-  {
+{
+  "languages": [{
+    "id": "php",
+    "title": "PHP",
+    "url": "https://www.php.net/"
+  }, {
     "id": "cplusplus",
     "title": "C++",
     "url": ""
-  },
-  {
+  }, {
     "id": "c",
     "title": "C",
     "url": ""
-  },
-  {
-    "id": "canva",
-    "title": "Canva",
-    "url": ""
-  },
-  {
-    "id": "chocolatey",
-    "title": "Chocolatey",
-    "url": ""
-  },
-  {
-    "id": "codeigniter",
-    "title": "CodeIgniter",
-    "url": ""
-  },
-  {
-    "id": "composer",
-    "title": "Composer",
-    "url": ""
-  },
-  {
-    "id": "cpanel",
-    "title": "cPanel",
-    "url": ""
-  },
-  {
-    "id": "css3",
-    "title": "CSS3",
-    "url": ""
-  },
-  {
+  }, {
     "id": "dart",
     "title": "Dart",
     "url": ""
-  },
-  {
-    "id": "delphi",
-    "title": "Delphi",
-    "url": ""
-  },
-  {
-    "id": "docker",
-    "title": "Docker",
-    "url": ""
-  },
-  {
-    "id": "eagle",
-    "title": "Eagle",
-    "url": ""
-  },
-  {
-    "id": "electron",
-    "title": "Electron",
-    "url": ""
-  },
-  {
-    "id": "expo",
-    "title": "Expo",
-    "url": ""
-  },
-  {
-    "id": "firebase",
-    "title": "Firebase",
-    "url": ""
-  },
-  {
-    "id": "figma",
-    "title": "Figma",
-    "url": ""
-  },
-  {
-    "id": "flutter",
-    "title": "Flutter",
-    "url": ""
-  },
-  {
-    "id": "fontawesome",
-    "title": "Font Awesome",
-    "url": ""
-  },
-  {
-    "id": "gatsby",
-    "title": "Gatsby",
-    "url": ""
-  },
-  {
-    "id": "git",
-    "title": "Git",
-    "url": ""
-  },
-  {
+  }, {
     "id": "go",
     "title": "Go",
     "url": ""
-  },
-  {
-    "id": "googlecloud",
-    "title": "Google Cloud",
-    "url": ""
-  },
-  {
-    "id": "googleanalytics",
-    "title": "Google Analytics",
-    "url": ""
-  },
-  {
-    "id": "googlefonts",
-    "title": "Google Fonts",
-    "url": ""
-  },
-  {
-    "id": "googleplay",
-    "title": "Google Play",
-    "url": ""
-  },
-  {
-    "id": "googletagmanager",
-    "title": "Google Tag Manager",
-    "url": ""
-  },
-  {
-    "id": "googlesheets",
-    "title": "Google Sheets",
-    "url": ""
-  },
-  {
-    "id": "googlesearchconsole",
-    "title": "Google Search Console",
-    "url": ""
-  },
-  {
-    "id": "grafana",
-    "title": "Grafana",
-    "url": ""
-  },
-  {
-    "id": "graphql",
-    "title": "GraphQL",
-    "url": ""
-  },
-  {
-    "id": "gulp",
-    "title": "gulp",
-    "url": ""
-  },
-  {
-    "id": "hugo",
-    "title": "Hugo",
-    "url": ""
-  },
-  {
-    "id": "html5",
-    "title": "HTML5",
-    "url": ""
-  },
-  {
-    "id": "icons8",
-    "title": "Icons8",
-    "url": ""
-  },
-  {
-    "id": "inkscape",
-    "title": "Inkscape",
-    "url": ""
-  },
-  {
-    "id": "ionic",
-    "title": "Ionic",
-    "url": ""
-  },
-  {
-    "id": "joomla",
-    "title": "Joomla",
-    "url": ""
-  },
-  {
-    "id": "jquery",
-    "title": "jQuery",
-    "url": ""
-  },
-  {
-    "id": "jss",
-    "title": "JSS",
-    "url": ""
-  },
-  {
+  }, {
     "id": "javascript",
     "title": "JavaScript",
     "url": ""
-  },
-  {
-    "id": "json",
-    "title": "JSON",
-    "url": ""
-  },
-  {
+  }, {
     "id": "kotlin",
     "title": "Kotlin",
-    "url": ""
-  },
-  {
-    "id": "kubernetes",
-    "title": "Kubernetes",
-    "url": ""
-  },
-  {
-    "id": "laragon",
-    "title": "Laragon",
-    "url": ""
-  },
-  {
-    "id": "laravel",
-    "title": "Laravel",
-    "url": ""
-  },
-  {
-    "id": "latex",
-    "title": "LaTeX",
-    "url": ""
-  },
-  {
+    "url": "https://kotlinlang.org/"
+  }, {
     "id": "less",
     "title": "Less",
     "url": ""
-  },
-  {
-    "id": "letsencrypt",
-    "title": "Let's Encrypt",
-    "url": ""
-  },
-  {
-    "id": "libreoffice",
-    "title": "LibreOffice",
-    "url": ""
-  },
-  {
-    "id": "linux",
-    "title": "Linux",
-    "url": ""
-  },
-  {
-    "id": "livewire",
-    "title": "Livewire",
-    "url": ""
-  },
-  {
-    "id": "lumen",
-    "title": "Lumen",
-    "url": ""
-  },
-  {
-    "id": "mariadb",
-    "title": "MariaDB",
-    "url": ""
-  },
-  {
-    "id": "materialdesignicons",
-    "title": "Material Design Icons",
-    "url": ""
-  },
-  {
-    "id": "mdx",
-    "title": "MDX",
-    "url": ""
-  },
-  {
-    "id": "microsoftoffice",
-    "title": "Microsoft Office",
-    "url": ""
-  },
-  {
-    "id": "microsoftvisio",
-    "title": "Microsoft Visio",
-    "url": ""
-  },
-  {
-    "id": "mongodb",
-    "title": "MongoDB",
-    "url": ""
-  },
-  {
-    "id": "mysql",
-    "title": "MySQL",
-    "url": ""
-  },
-  {
-    "id": "nodedotjs",
-    "title": "Node.js",
-    "url": ""
-  },
-  {
-    "id": "notion",
-    "title": "Notion",
-    "url": ""
-  },
-  {
-    "id": "npm",
-    "title": "npm",
-    "url": ""
-  },
-  {
-    "id": "obsstudio",
-    "title": "OBS Studio",
-    "url": ""
-  },
-  {
-    "id": "packagist",
-    "title": "Packagist",
-    "url": ""
-  },
-  {
-    "id": "perl",
-    "title": "Perl",
-    "url": ""
-  },
-  {
-    "id": "php",
-    "title": "PHP",
-    "url": ""
-  },
-  {
-    "id": "postgresql",
-    "title": "PostgreSQL",
-    "url": ""
-  },
-  {
-    "id": "postcss",
-    "title": "PostCSS",
-    "url": ""
-  },
-  {
-    "id": "prestashop",
-    "title": "PrestaShop",
-    "url": ""
-  },
-  {
-    "id": "prisma",
-    "title": "Prisma",
-    "url": ""
-  },
-  {
-    "id": "prezi",
-    "title": "Prezi",
-    "url": ""
-  },
-  {
-    "id": "prometheus",
-    "title": "Prometheus",
-    "url": ""
-  },
-  {
-    "id": "protodotio",
-    "title": "Proto.io",
-    "url": ""
-  },
-  {
-    "id": "pwa",
-    "title": "PWA",
-    "url": ""
-  },
-  {
-    "id": "pusher",
-    "title": "Pusher",
-    "url": ""
-  },
-  {
-    "id": "python",
-    "title": "Python",
-    "url": ""
-  },
-  {
-    "id": "raspberrypi",
-    "title": "Raspberry Pi",
-    "url": ""
-  },
-  {
-    "id": "react",
-    "title": "React",
-    "url": ""
-  },
-  {
-    "id": "redis",
-    "title": "Redis",
-    "url": ""
-  },
-  {
+  }, {
     "id": "sass",
     "title": "Sass",
     "url": ""
-  },
-  {
-    "id": "semver",
-    "title": "SemVer",
+  }, {
+    "id": "perl",
+    "title": "Perl",
+    "url": "https://www.perl.org/"
+  }, {
+    "id": "python",
+    "title": "Python",
     "url": ""
-  },
-  {
-    "id": "sketchup",
-    "title": "SketchUp",
-    "url": ""
-  },
-  {
-    "id": "socketdotio",
-    "title": "Socket.io",
-    "url": ""
-  },
-  {
-    "id": "stackblitz",
-    "title": "StackBlitz",
-    "url": ""
-  },
-  {
-    "id": "swagger",
-    "title": "Swagger",
-    "url": ""
-  },
-  {
-    "id": "symfony",
-    "title": "Symfony",
-    "url": ""
-  },
-  {
-    "id": "tailwindcss",
-    "title": "Tailwind CSS",
-    "url": ""
-  },
-  {
-    "id": "travisci",
-    "title": "Travis CI",
-    "url": ""
-  },
-  {
-    "id": "trello",
-    "title": "Trello",
-    "url": ""
-  },
-  {
-    "id": "twilio",
-    "title": "Twilio",
-    "url": ""
-  },
-  {
+  }, {
     "id": "typescript",
     "title": "TypeScript",
     "url": ""
-  },
-  {
-    "id": "vite",
-    "title": "Vite",
-    "url": ""
-  },
-  {
-    "id": "visualstudiocode",
-    "title": "Visual Studio Code",
-    "url": ""
-  },
-  {
-    "id": "vuedotjs",
-    "title": "Vue.js",
-    "url": ""
-  },
-  {
-    "id": "webgl",
-    "title": "WebGL",
-    "url": ""
-  },
-  {
-    "id": "webrtc",
-    "title": "WebRTC",
-    "url": ""
-  },
-  {
-    "id": "wordpress",
-    "title": "WordPress",
-    "url": ""
-  },
-  {
-    "id": "xampp",
-    "title": "XAMPP",
-    "url": ""
-  },
-  {
-    "id": "yarn",
-    "title": "Yarn",
-    "url": ""
-  },
-  {
-    "id": "kicad",
-    "title": "KiCad",
-    "url": ""
-  },
-  {
+  }, {
+    "id": "dotnet",
+    "title": ".NET",
+    "url": "https://dotnet.microsoft.com/en-us/languages"
+  }, {
+    "id": "java",
+    "title": "Java",
+    "url": "https://www.java.com/en/"
+  }],
+  "framework-tools": [{
     "id": "yiiframework",
     "title": "Yii Framework",
+    "url": "https://www.yiiframework.com/"
+  }, {
+    "id": "icons8",
+    "title": "Icons8",
     "url": ""
-  }
-]
+  }, {
+    "id": "linux",
+    "title": "Linux",
+    "url": ""
+  }, {
+    "id": "livewire",
+    "title": "Livewire",
+    "url": ""
+  }, {
+    "id": "lumen",
+    "title": "Lumen",
+    "url": ""
+  }, {
+    "id": "mariadb",
+    "title": "MariaDB",
+    "url": ""
+  }, {
+    "id": "materialdesignicons",
+    "title": "Material Design Icons",
+    "url": ""
+  }, {
+    "id": "mdx",
+    "title": "MDX",
+    "url": ""
+  }, {
+    "id": "mongodb",
+    "title": "MongoDB",
+    "url": ""
+  }, {
+    "id": "mysql",
+    "title": "MySQL",
+    "url": ""
+  }, {
+    "id": "nodedotjs",
+    "title": "Node.js",
+    "url": ""
+  }, {
+    "id": "css3",
+    "title": "CSS3",
+    "url": ""
+  }, {
+    "id": "html5",
+    "title": "HTML5",
+    "url": ""
+  }, {
+    "id": "npm",
+    "title": "npm",
+    "url": ""
+  }, {
+    "id": "packagist",
+    "title": "Packagist",
+    "url": ""
+  }, {
+    "id": "redis",
+    "title": "Redis",
+    "url": ""
+  }, {
+    "id": "react",
+    "title": "React",
+    "url": ""
+  }, {
+    "id": "semver",
+    "title": "SemVer",
+    "url": ""
+  }, {
+    "id": "laravel",
+    "title": "Laravel",
+    "url": "https://laravel.com/"
+  }, {
+    "id": "kubernetes",
+    "title": "Kubernetes",
+    "url": ""
+  }, {
+    "id": "postgresql",
+    "title": "PostgreSQL",
+    "url": ""
+  }, {
+    "id": "postcss",
+    "title": "PostCSS",
+    "url": ""
+  }, {
+    "id": "prestashop",
+    "title": "PrestaShop",
+    "url": ""
+  }, {
+    "id": "prisma",
+    "title": "Prisma",
+    "url": ""
+  }, {
+    "id": "prometheus",
+    "title": "Prometheus",
+    "url": ""
+  }, {
+    "id": "protodotio",
+    "title": "Proto.io",
+    "url": ""
+  }, {
+    "id": "pusher",
+    "title": "Pusher",
+    "url": ""
+  }, {
+    "id": "laragon",
+    "title": "Laragon",
+    "url": ""
+  }, {
+    "id": "latex",
+    "title": "LaTeX",
+    "url": ""
+  }, {
+    "id": "letsencrypt",
+    "title": "Let's Encrypt",
+    "url": ""
+  }, {
+    "id": "googlecloud",
+    "title": "Google Cloud",
+    "url": ""
+  }, {
+    "id": "googleanalytics",
+    "title": "Google Analytics",
+    "url": ""
+  }, {
+    "id": "googlefonts",
+    "title": "Google Fonts",
+    "url": ""
+  }, {
+    "id": "googleplay",
+    "title": "Google Play",
+    "url": ""
+  }, {
+    "id": "googletagmanager",
+    "title": "Google Tag Manager",
+    "url": ""
+  }, {
+    "id": "googlesheets",
+    "title": "Google Sheets",
+    "url": ""
+  }, {
+    "id": "googlesearchconsole",
+    "title": "Google Search Console",
+    "url": ""
+  }, {
+    "id": "socketdotio",
+    "title": "Socket.io",
+    "url": ""
+  }, {
+    "id": "stackblitz",
+    "title": "StackBlitz",
+    "url": ""
+  }, {
+    "id": "swagger",
+    "title": "Swagger",
+    "url": ""
+  }, {
+    "id": "symfony",
+    "title": "Symfony",
+    "url": ""
+  }, {
+    "id": "tailwindcss",
+    "title": "Tailwind CSS",
+    "url": ""
+  }, {
+    "id": "travisci",
+    "title": "Travis CI",
+    "url": ""
+  }, {
+    "id": "codeigniter",
+    "title": "CodeIgniter",
+    "url": ""
+  }, {
+    "id": "vuedotjs",
+    "title": "Vue.js",
+    "url": "https://vuejs.org/"
+  }, {
+    "id": "vite",
+    "title": "Vite",
+    "url": "https://vitejs.dev/"
+  }, {
+    "id": "amazonaws",
+    "title": "Amazon AWS",
+    "url": "https://aws.amazon.com/"
+  }, {
+    "id": "bootstrap",
+    "title": "Bootstrap",
+    "url": "https://getbootstrap.com/"
+  }, {
+    "id": "wordpress",
+    "title": "WordPress",
+    "url": "https://wordpress.org/"
+  }, {
+    "id": "grafana",
+    "title": "Grafana",
+    "url": ""
+  }, {
+    "id": "graphql",
+    "title": "GraphQL",
+    "url": ""
+  }, {
+    "id": "gulp",
+    "title": "gulp",
+    "url": ""
+  }, {
+    "id": "hugo",
+    "title": "Hugo",
+    "url": ""
+  }, {
+    "id": "composer",
+    "title": "Composer",
+    "url": ""
+  }, {
+    "id": "cpanel",
+    "title": "cPanel",
+    "url": ""
+  }, {
+    "id": "twilio",
+    "title": "Twilio",
+    "url": "https://www.twilio.com/"
+  }, {
+    "id": "chocolatey",
+    "title": "Chocolatey",
+    "url": ""
+  }, {
+    "id": "yarn",
+    "title": "Yarn",
+    "url": "https://yarnpkg.com/"
+  }, {
+    "id": "docker",
+    "title": "Docker",
+    "url": ""
+  }, {
+    "id": "electron",
+    "title": "Electron",
+    "url": ""
+  }, {
+    "id": "expo",
+    "title": "Expo",
+    "url": ""
+  }, {
+    "id": "firebase",
+    "title": "Firebase",
+    "url": ""
+  }, {
+    "id": "bower",
+    "title": "Bower",
+    "url": "https://bower.io/"
+  }, {
+    "id": "webrtc",
+    "title": "WebRTC",
+    "url": "https://webrtc.org/"
+  }, {
+    "id": "webgl",
+    "title": "WebGL",
+    "url": "https://get.webgl.org/"
+  }, {
+    "id": "flutter",
+    "title": "Flutter",
+    "url": ""
+  }, {
+    "id": "fontawesome",
+    "title": "Font Awesome",
+    "url": ""
+  }, {
+    "id": "gatsby",
+    "title": "Gatsby",
+    "url": ""
+  }, {
+    "id": "git",
+    "title": "Git",
+    "url": ""
+  }, {
+    "id": "ionic",
+    "title": "Ionic",
+    "url": "https://ionicframework.com/"
+  }, {
+    "id": "joomla",
+    "title": "Joomla",
+    "url": ""
+  }, {
+    "id": "jquery",
+    "title": "jQuery",
+    "url": ""
+  }, {
+    "id": "jss",
+    "title": "JSS",
+    "url": ""
+  }],
+  "software": [{
+    "id": "visualstudiocode",
+    "title": "Visual Studio Code",
+    "url": "https://code.visualstudio.com/"
+  }, {
+    "id": "microsoftoffice",
+    "title": "Microsoft Office",
+    "url": ""
+  }, {
+    "id": "microsoftvisio",
+    "title": "Microsoft Visio",
+    "url": ""
+  }, {
+    "id": "obsstudio",
+    "title": "OBS Studio",
+    "url": ""
+  }, {
+    "id": "raspberrypi",
+    "title": "Raspberry Pi",
+    "url": ""
+  }, {
+    "id": "prezi",
+    "title": "Prezi",
+    "url": ""
+  }, {
+    "id": "androidstudio",
+    "title": "Android Studio",
+    "url": "https://developer.android.com/studio"
+  }, {
+    "id": "arduino",
+    "title": "Arduino",
+    "url": "https://www.arduino.cc/"
+  }, {
+    "id": "adobe",
+    "title": "Adobe",
+    "url": "https://www.adobe.com/"
+  }, {
+    "id": "kicad",
+    "title": "KiCad",
+    "url": "https://www.kicad.org/"
+  }, {
+    "id": "eagle",
+    "title": "Eagle",
+    "url": ""
+  }, {
+    "id": "trello",
+    "title": "Trello",
+    "url": "https://trello.com/"
+  }, {
+    "id": "notion",
+    "title": "Notion",
+    "url": ""
+  }, {
+    "id": "postman",
+    "title": "Postman",
+    "url": "https://www.postman.com/"
+  }, {
+    "id": "figma",
+    "title": "Figma",
+    "url": ""
+  }, {
+    "id": "canva",
+    "title": "Canva",
+    "url": ""
+  }, {
+    "id": "xampp",
+    "title": "XAMPP",
+    "url": "https://www.apachefriends.org/"
+  }, {
+    "id": "sketchup",
+    "title": "SketchUp",
+    "url": ""
+  }, {
+    "id": "inkscape",
+    "title": "Inkscape",
+    "url": ""
+  }, {
+    "id": "pwa",
+    "title": "PWA",
+    "url": ""
+  }]
+}
