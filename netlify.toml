@@ -25,7 +25,7 @@
   package = "netlify-plugin-submit-sitemap"
 
 	[plugins.inputs]
-    baseUrl = "https://sugeng-sulistiyawan.github.io/"
+    baseUrl = "https://sugengsulistiyawan.my.id/"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
     providers = [
