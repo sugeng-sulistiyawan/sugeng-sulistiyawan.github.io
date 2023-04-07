@@ -17,17 +17,17 @@
     <div class="col-lg-12 text-center">
       💬 Ask me about anything <a href="https://github.com/sugeng-sulistiyawan/sugeng-sulistiyawan/issues"
         target="_blank" rel="noopener">here</a>
+    </div>
 
-      <div class="mt-2">
-        <ul class="nav flex-row justify-content-center">
-          {{ range $soc := sort (index .Site.Params "social") "weight" "asc" }}
-          <li class="nav-item">
-            <a class="nav-link social-link text-dark" href="{{ $soc.url }}" target="_blank" rel="noopener"
-              title="{{ $soc.name | safeHTML }}: {{ $soc.label | safeHTML }}">{{ $soc.icon | safeHTML }}</a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
+    <div class="mt-2">
+      <ul class="nav flex-row justify-content-center">
+        {{ range $soc := sort (index .Site.Params "social") "weight" "asc" }}
+        <li class="nav-item">
+          <a class="nav-link social-link text-dark" href="{{ $soc.url }}" target="_blank" rel="noopener"
+            title="{{ $soc.name | safeHTML }}: {{ $soc.label | safeHTML }}">{{ $soc.icon | safeHTML }}</a>
+        </li>
+        {{ end }}
+      </ul>
     </div>
 
     <div class="col-lg-16 text-center mb-4">
