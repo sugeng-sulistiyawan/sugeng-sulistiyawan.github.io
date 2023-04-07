@@ -122,13 +122,15 @@
 
           <hr class="text-black-50 my-4 d-lg-none">
           <ul class="nav flex-column flex-lg-row">
-            {{ range .Site.Menus.social -}}
+            {{ range $soc := sort (index .Site.Params "social") "weight" "asc" }}
+            {{ if $soc.nav }}
             <li class="nav-item">
-              <a class="nav-link social-link" href="{{ .URL | relURL }}" target="_blank"
-                rel="noopener">{{ .Pre | safeHTML }}
-                <small class="ms-2 d-lg-none">{{ .Name | safeHTML }}</small></a>
+              <a class="nav-link social-link" href="{{ $soc.url }}" target="_blank"
+                rel="noopener">{{ $soc.icon | safeHTML }}
+                <small class="ms-2 d-lg-none">{{ $soc.name | safeHTML }}</small></a>
             </li>
-            {{ end -}}
+            {{ end }}
+            {{ end }}
           </ul>
           {{ if .Site.Params.options.darkMode | eq .Site.Params.options.multilingualMode true -}}
           <hr class="text-black-50 my-4 d-lg-none">
@@ -186,7 +188,8 @@
               aria-labelledby="doks-languages">
 
               <li><a class="dropdown-item current" aria-current="true"
-                  href="{{ .RelPermalink }}"><small>[{{ .Site.Params.languageTag }}]</small> {{ .Site.Language.LanguageName }}</a></li>
+                  href="{{ .RelPermalink }}"><small>[{{ .Site.Params.languageTag }}]</small>
+                  {{ .Site.Language.LanguageName }}</a></li>
 
               <li>
                 <hr class="dropdown-divider">
@@ -195,7 +198,8 @@
               {{ if .IsTranslated -}}
               {{ range .Translations }}
               <li><a class="dropdown-item" rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}"
-                  lang="{{ .Lang }}"><small>[{{ .Site.Params.LanguageTag }}]</small> {{ .Language.LanguageName }}</a></li>
+                  lang="{{ .Lang }}"><small>[{{ .Site.Params.LanguageTag }}]</small> {{ .Language.LanguageName }}</a>
+              </li>
               {{ end -}}
               {{ else -}}
               {{ range .Site.Languages -}}

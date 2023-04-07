@@ -1,16 +1,10 @@
 ---
-title: "Contact"
-description: "Drop us an email."
-date: 2020-08-27T19:25:12+02:00
-lastmod: 2020-08-27T19:25:12+02:00
+title: "Kontak"
+description: "Kontak saya langsung."
+date: 2023-04-07T15:11:43+07:00
+lastmod: 2023-04-07T15:11:47+07:00
 draft: false
 images: []
 ---
 
-Email:
-
-[sugeng.sulistiyawan@gmail.com](mailto:sugeng.sulistiyawan@gmail.com)
-
-Whatsapp:
-
-[+6281 6658 056](https://wa.me/62816658056)
+{{< social >}}

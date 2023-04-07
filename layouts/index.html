@@ -9,6 +9,10 @@
     </div>
   </div>
 
+  <div class="position-absolute w-100" style="left: 0; z-index: -1">
+    <div class="bg-dots" style="height: 15rem;"></div>
+  </div>
+
   <div class="row justify-content-center align-items-center gap-3 mt-3 mb-4">
     <div class="col-lg-12 text-center">
       💬 Ask me about anything <a href="https://github.com/sugeng-sulistiyawan/sugeng-sulistiyawan/issues"
@@ -19,7 +23,7 @@
 
       <h3 class="mb-4"><strong>Technology, Language and Tools I Use</strong></h3>
 
-      {{ range $technology := index $.Site.Data "technologies" }}
+      {{ range $technology := sort (index $.Site.Data "technologies") "id" "asc" }}
 
       {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
 

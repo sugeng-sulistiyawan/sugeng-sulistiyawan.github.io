@@ -1,0 +1,12 @@
+{{ range $soc := sort (index .Site.Params "social") "weight" "asc" }}
+  <div class="d-flex mb-4">
+    <div class="me-4 text-center" style="width: 32px">
+      {{ $soc.icon | safeHTML }}
+    </div>
+    <div class="d-block">
+      <strong>{{ $soc.name | safeHTML }}</strong>
+      <a class="d-block" href="{{ $soc.url }}" target="_blank"
+      rel="noopener">{{ $soc.label | safeHTML }}</a>
+    </div>
+  </div>
+{{ end }}
