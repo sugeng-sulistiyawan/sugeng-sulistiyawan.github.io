@@ -1,5 +1,5 @@
 {
-  "languages": [{
+  "cores": [{
     "id": "php",
     "title": "PHP",
     "url": "https://www.php.net/"
@@ -28,14 +28,6 @@
     "title": "Kotlin",
     "url": "https://kotlinlang.org/"
   }, {
-    "id": "less",
-    "title": "Less",
-    "url": ""
-  }, {
-    "id": "sass",
-    "title": "Sass",
-    "url": ""
-  }, {
     "id": "perl",
     "title": "Perl",
     "url": "https://www.perl.org/"
@@ -55,8 +47,16 @@
     "id": "java",
     "title": "Java",
     "url": "https://www.java.com/en/"
+  }, {
+    "id": "css3",
+    "title": "CSS3",
+    "url": ""
+  }, {
+    "id": "html5",
+    "title": "HTML5",
+    "url": ""
   }],
-  "framework-tools": [{
+  "frameworks": [{
     "id": "yiiframework",
     "title": "Yii Framework",
     "url": "https://www.yiiframework.com/"
@@ -65,20 +65,32 @@
     "title": "Icons8",
     "url": ""
   }, {
-    "id": "linux",
-    "title": "Linux",
+    "id": "less",
+    "title": "Less",
     "url": ""
   }, {
-    "id": "livewire",
-    "title": "Livewire",
+    "id": "sass",
+    "title": "Sass",
     "url": ""
   }, {
-    "id": "lumen",
-    "title": "Lumen",
+    "id": "jquery",
+    "title": "jQuery",
     "url": ""
   }, {
-    "id": "mariadb",
-    "title": "MariaDB",
+    "id": "vuedotjs",
+    "title": "Vue.js",
+    "url": "https://vuejs.org/"
+  }, {
+    "id": "vite",
+    "title": "Vite",
+    "url": "https://vitejs.dev/"
+  }, {
+    "id": "laravel",
+    "title": "Laravel",
+    "url": "https://laravel.com/"
+  }, {
+    "id": "react",
+    "title": "React",
     "url": ""
   }, {
     "id": "materialdesignicons",
@@ -87,6 +99,71 @@
   }, {
     "id": "mdx",
     "title": "MDX",
+    "url": ""
+  }, {
+    "id": "livewire",
+    "title": "Livewire",
+    "url": "https://laravel-livewire.com/"
+  }, {
+    "id": "lumen",
+    "title": "Lumen",
+    "url": ""
+  }, {
+    "id": "jss",
+    "title": "JSS",
+    "url": ""
+  }, {
+    "id": "ionic",
+    "title": "Ionic",
+    "url": "https://ionicframework.com/"
+  }, {
+    "id": "flutter",
+    "title": "Flutter",
+    "url": ""
+  }, {
+    "id": "twilio",
+    "title": "Twilio",
+    "url": "https://www.twilio.com/"
+  }, {
+    "id": "bootstrap",
+    "title": "Bootstrap",
+    "url": "https://getbootstrap.com/"
+  }, {
+    "id": "tailwindcss",
+    "title": "Tailwind CSS",
+    "url": ""
+  }, {
+    "id": "socketdotio",
+    "title": "Socket.io",
+    "url": ""
+  }, {
+    "id": "latex",
+    "title": "LaTeX",
+    "url": ""
+  }, {
+    "id": "pusher",
+    "title": "Pusher",
+    "url": ""
+  }, {
+    "id": "postcss",
+    "title": "PostCSS",
+    "url": ""
+  }, {
+    "id": "prestashop",
+    "title": "PrestaShop",
+    "url": ""
+  }],
+  "tools": [{
+    "id": "linux",
+    "title": "Linux",
+    "url": ""
+  }, {
+    "id": "windows",
+    "title": "Windows",
+    "url": ""
+  }, {
+    "id": "mariadb",
+    "title": "MariaDB",
     "url": ""
   }, {
     "id": "mongodb",
@@ -101,14 +178,6 @@
     "title": "Node.js",
     "url": ""
   }, {
-    "id": "css3",
-    "title": "CSS3",
-    "url": ""
-  }, {
-    "id": "html5",
-    "title": "HTML5",
-    "url": ""
-  }, {
     "id": "npm",
     "title": "npm",
     "url": ""
@@ -121,17 +190,9 @@
     "title": "Redis",
     "url": ""
   }, {
-    "id": "react",
-    "title": "React",
-    "url": ""
-  }, {
     "id": "semver",
     "title": "SemVer",
     "url": ""
-  }, {
-    "id": "laravel",
-    "title": "Laravel",
-    "url": "https://laravel.com/"
   }, {
     "id": "kubernetes",
     "title": "Kubernetes",
@@ -141,17 +202,9 @@
     "title": "PostgreSQL",
     "url": ""
   }, {
-    "id": "postcss",
-    "title": "PostCSS",
-    "url": ""
-  }, {
-    "id": "prestashop",
-    "title": "PrestaShop",
-    "url": ""
-  }, {
     "id": "prisma",
     "title": "Prisma",
-    "url": ""
+    "url": "https://www.prisma.io/"
   }, {
     "id": "prometheus",
     "title": "Prometheus",
@@ -161,16 +214,8 @@
     "title": "Proto.io",
     "url": ""
   }, {
-    "id": "pusher",
-    "title": "Pusher",
-    "url": ""
-  }, {
     "id": "laragon",
     "title": "Laragon",
-    "url": ""
-  }, {
-    "id": "latex",
-    "title": "LaTeX",
     "url": ""
   }, {
     "id": "letsencrypt",
@@ -205,10 +250,6 @@
     "title": "Google Search Console",
     "url": ""
   }, {
-    "id": "socketdotio",
-    "title": "Socket.io",
-    "url": ""
-  }, {
     "id": "stackblitz",
     "title": "StackBlitz",
     "url": ""
@@ -221,33 +262,13 @@
     "title": "Symfony",
     "url": ""
   }, {
-    "id": "tailwindcss",
-    "title": "Tailwind CSS",
-    "url": ""
-  }, {
     "id": "travisci",
     "title": "Travis CI",
     "url": ""
   }, {
-    "id": "codeigniter",
-    "title": "CodeIgniter",
-    "url": ""
-  }, {
-    "id": "vuedotjs",
-    "title": "Vue.js",
-    "url": "https://vuejs.org/"
-  }, {
-    "id": "vite",
-    "title": "Vite",
-    "url": "https://vitejs.dev/"
-  }, {
     "id": "amazonaws",
     "title": "Amazon AWS",
     "url": "https://aws.amazon.com/"
-  }, {
-    "id": "bootstrap",
-    "title": "Bootstrap",
-    "url": "https://getbootstrap.com/"
   }, {
     "id": "wordpress",
     "title": "WordPress",
@@ -276,10 +297,6 @@
     "id": "cpanel",
     "title": "cPanel",
     "url": ""
-  }, {
-    "id": "twilio",
-    "title": "Twilio",
-    "url": "https://www.twilio.com/"
   }, {
     "id": "chocolatey",
     "title": "Chocolatey",
@@ -317,14 +334,6 @@
     "title": "WebGL",
     "url": "https://get.webgl.org/"
   }, {
-    "id": "flutter",
-    "title": "Flutter",
-    "url": ""
-  }, {
-    "id": "fontawesome",
-    "title": "Font Awesome",
-    "url": ""
-  }, {
     "id": "gatsby",
     "title": "Gatsby",
     "url": ""
@@ -333,27 +342,14 @@
     "title": "Git",
     "url": ""
   }, {
-    "id": "ionic",
-    "title": "Ionic",
-    "url": "https://ionicframework.com/"
-  }, {
     "id": "joomla",
     "title": "Joomla",
-    "url": ""
-  }, {
-    "id": "jquery",
-    "title": "jQuery",
-    "url": ""
-  }, {
-    "id": "jss",
-    "title": "JSS",
     "url": ""
   }, {
     "id": "docusaurus",
     "title": "Docusaurus",
     "url": "https://docusaurus.io/"
-  }],
-  "software": [{
+  }, {
     "id": "visualstudiocode",
     "title": "Visual Studio Code",
     "url": "https://code.visualstudio.com/"

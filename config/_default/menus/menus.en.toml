@@ -1,12 +1,12 @@
 [[main]]
-  name = "About"
+  name = "About Me"
   url = "/about/"
   weight = 10
 
-[[main]]
-  name = "Contact"
-  url = "/contact/"
-  weight = 15
+# [[main]]
+#   name = "Contact"
+#   url = "/contact/"
+#   weight = 15
 
 [[main]]
   name = "Blog"

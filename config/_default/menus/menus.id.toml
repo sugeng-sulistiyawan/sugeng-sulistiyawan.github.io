@@ -1,12 +1,12 @@
 [[main]]
-  name = "Tentang"
+  name = "Tentang Saya"
   url = "/about/"
   weight = 10
 
-[[main]]
-  name = "Kontak"
-  url = "/contact/"
-  weight = 15
+# [[main]]
+#   name = "Kontak"
+#   url = "/contact/"
+#   weight = 15
 
 [[main]]
   name = "Blog"

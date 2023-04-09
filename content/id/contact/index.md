@@ -1,6 +1,6 @@
 ---
-title: "Kontak"
-description: "Kontak saya langsung."
+title: "Kontak Saya"
+description: "Alamat: RT. 20 RW. 05, Klangsur, Dongko, Trenggalek, Jawa Timur, Indonesia 66363 | Email: sugeng.sulistiyawan@gmail.com."
 date: 2023-04-07T15:11:43+07:00
 lastmod: 2023-04-07T15:11:47+07:00
 draft: false

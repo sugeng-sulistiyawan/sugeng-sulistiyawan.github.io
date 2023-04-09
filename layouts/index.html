@@ -36,9 +36,9 @@
 
       <div class="row justify-content-center">
 
-        <div class="col-lg-4">
-          <h5 class="mb-3"><strong>Languages</strong></h5>
-          {{ range $technology := sort (index $.Site.Data "technologies" "languages") "id" "asc" }}
+        <div class="col-sm-6 col-lg-4">
+          <h5 class="mb-3"><strong>Core</strong></h5>
+          {{ range $technology := sort (index $.Site.Data "technologies" "cores") "id" "asc" }}
 
           {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
 
@@ -56,9 +56,9 @@
 
           {{ end }}
         </div>
-        <div class="col-sm-10 col-lg-7">
-          <h5 class="mb-3"><strong>Framework & Tools</strong></h5>
-          {{ range $technology := sort (index $.Site.Data "technologies" "framework-tools") "id" "asc" }}
+        <div class="col-sm-6 col-lg-4">
+          <h5 class="mb-3"><strong>Framework/Library</strong></h5>
+          {{ range $technology := sort (index $.Site.Data "technologies" "frameworks") "id" "asc" }}
 
           {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
 
@@ -76,9 +76,9 @@
 
           {{ end }}
         </div>
-        <div class="col-sm-6 col-lg-5">
-          <h5 class="mb-3"><strong>Software & Technology</strong></h5>
-          {{ range $technology := sort (index $.Site.Data "technologies" "software") "id" "asc" }}
+        <div class="col-sm-12 col-lg-8">
+          <h5 class="mb-3"><strong>Tools/Software/Technology</strong></h5>
+          {{ range $technology := sort (index $.Site.Data "technologies" "tools") "id" "asc" }}
 
           {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
 
@@ -96,7 +96,6 @@
 
           {{ end }}
         </div>
-      </div>
 
     </div>
   </div>
