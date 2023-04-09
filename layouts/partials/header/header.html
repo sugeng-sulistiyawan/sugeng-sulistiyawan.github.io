@@ -188,9 +188,7 @@
               aria-labelledby="doks-languages">
 
               <li><a class="dropdown-item current" aria-current="true"
-                  href="{{ .RelPermalink }}"><small>[{{ .Site.Params.languageTag }}]</small>
-                  {{ .Site.Language.LanguageName }}</a></li>
-
+                  href="{{ .RelPermalink }}">{{ .Site.Language.LanguageName }}</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -198,14 +196,14 @@
               {{ if .IsTranslated -}}
               {{ range .Translations }}
               <li><a class="dropdown-item" rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}"
-                  lang="{{ .Lang }}"><small>[{{ .Site.Params.LanguageTag }}]</small> {{ .Language.LanguageName }}</a>
+                  lang="{{ .Lang }}">{{ .Language.LanguageName }}</a>
               </li>
               {{ end -}}
               {{ else -}}
               {{ range .Site.Languages -}}
               {{ if ne $.Site.Language.Lang .Lang }}
               <li><a class="dropdown-item" rel="alternate" href="{{ .Lang | relLangURL }}" hreflang="{{ .Lang }}"
-                  lang="{{ .Lang }}"><small>[{{ .Lang }}]</small> {{ .LanguageName }}</a></li>
+                  lang="{{ .Lang }}">{{ .LanguageName }}</a></li>
               {{ end -}}
               {{ end -}}
               {{ end -}}
