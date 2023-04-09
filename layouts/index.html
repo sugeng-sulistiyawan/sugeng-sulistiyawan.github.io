@@ -16,13 +16,13 @@
   <div class="row justify-content-center align-items-center gap-3 mt-3 mb-4">
     <div class="col-lg-12 text-center">
       💬 Ask me about anything <a href="https://github.com/sugeng-sulistiyawan/sugeng-sulistiyawan/issues"
-        target="_blank" rel="noopener">here</a>
+        target="_blank" rel="noopener noreferrer">here</a>
 
       <div class="mt-2">
         <ul class="nav flex-row justify-content-center">
           {{ range $soc := sort (index .Site.Params "social") "weight" "asc" }}
           <li class="nav-item">
-            <a class="nav-link social-link text-dark" href="{{ $soc.url }}" target="_blank" rel="noopener"
+            <a class="nav-link social-link text-dark" href="{{ $soc.url }}" target="_blank" rel="noopener noreferrer"
               title="{{ $soc.name | safeHTML }}: {{ $soc.label | safeHTML }}">{{ $soc.icon | safeHTML }}</a>
           </li>
           {{ end }}
@@ -49,7 +49,7 @@
           {{ $target = "_blank" }}
           {{ end }}
 
-          <a href="{{ $url }}" target="{{ $target }}" rel="noopener" title="{{ $technology.title }}"
+          <a href="{{ $url }}" target="{{ $target }}" rel="noopener noreferrer" title="{{ $technology.title }}"
             class="d-inline-block m-1">
             <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
           </a>
@@ -69,7 +69,7 @@
           {{ $target = "_blank" }}
           {{ end }}
 
-          <a href="{{ $url }}" target="{{ $target }}" rel="noopener" title="{{ $technology.title }}"
+          <a href="{{ $url }}" target="{{ $target }}" rel="noopener noreferrer" title="{{ $technology.title }}"
             class="d-inline-block m-1">
             <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
           </a>
@@ -89,7 +89,7 @@
           {{ $target = "_blank" }}
           {{ end }}
 
-          <a href="{{ $url }}" target="{{ $target }}" rel="noopener" title="{{ $technology.title }}"
+          <a href="{{ $url }}" target="{{ $target }}" rel="noopener noreferrer" title="{{ $technology.title }}"
             class="d-inline-block m-1">
             <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
           </a>
@@ -129,7 +129,7 @@
     {{ range $top := index $.Site.Data "stats" "top" }}
 
     <div class="col-lg-6">
-      <a href="{{ $top.url }}" target="_blank" rel="noopener">
+      <a href="{{ $top.url }}" target="_blank" rel="noopener noreferrer">
         <img src="{{ $top.stat }}&hide_border=true&theme=yeblu" class="w-100 img-show-light" style="display: none;" />
         <img src="{{ $top.stat }}&hide_border=true&theme=swift" class="w-100 img-show-dark" style="display: none;" />
       </a>
@@ -142,7 +142,7 @@
     {{ range $pin := index $.Site.Data "stats" "pin" }}
 
     <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/{{ $pin }}" target="_blank" rel="noopener">
+      <a href="https://github.com/sugeng-sulistiyawan/{{ $pin }}" target="_blank" rel="noopener noreferrer">
         <img
           src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=swift"
           class="w-100 img-show-light" style="display: none;" />

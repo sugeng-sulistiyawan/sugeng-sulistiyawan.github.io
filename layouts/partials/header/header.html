@@ -126,7 +126,7 @@
             {{ if $soc.nav }}
             <li class="nav-item">
               <a class="nav-link social-link" href="{{ $soc.url }}" target="_blank"
-                rel="noopener">{{ $soc.icon | safeHTML }}
+                rel="noopener noreferrer">{{ $soc.icon | safeHTML }}
                 <small class="ms-2 d-lg-none">{{ $soc.name | safeHTML }}</small></a>
             </li>
             {{ end }}

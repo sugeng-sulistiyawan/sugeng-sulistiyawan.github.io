@@ -15,9 +15,9 @@ images: []
     <strong>Alamat</strong>
     <ul class="ps-3 mb-0 pb-0">
       <li class="ps-2"><a class="d-block fs-6" href="https://goo.gl/maps/XKaLdRzwDWSW12MC9" target="_blank"
-      rel="noopener">RT. 20 RW. 05, Klangsur, Dongko, Trenggalek, Jawa Timur, Indonesia 66363</a></li>
+      rel="noopener noreferrer">RT. 20 RW. 05, Klangsur, Dongko, Trenggalek, Jawa Timur, Indonesia 66363</a></li>
       <li class="ps-2"><a class="d-block fs-6" href="https://goo.gl/maps/xkL4aZAvWK1yht3H6" target="_blank"
-      rel="noopener">No. 33 RT. 02 RW. 03, Ketanon, Kedungwaru, Tulungagung, Jawa Timur, Indonesia 66226</a></li>
+      rel="noopener noreferrer">No. 33 RT. 02 RW. 03, Ketanon, Kedungwaru, Tulungagung, Jawa Timur, Indonesia 66226</a></li>
     </ul>
   </div>
 </div>

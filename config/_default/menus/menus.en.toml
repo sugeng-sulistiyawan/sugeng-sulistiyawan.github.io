@@ -3,10 +3,10 @@
   url = "/about/"
   weight = 10
 
-# [[main]]
-#   name = "Contact"
-#   url = "/contact/"
-#   weight = 15
+[[main]]
+  name = "CV"
+  url = "/sugeng_sulistiyawan_resume.pdf"
+  weight = 100
 
 [[main]]
   name = "Blog"
