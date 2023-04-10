@@ -3,7 +3,9 @@
 
     <div class="fs-6">
       © 1996 - {{ now.Year }} <a class="text-dark"
-        href="{{ "" | absURL }}"><strong>{{ .Site.Params.Title }}</strong></a> | <a class="text-muted" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>.
+        href="{{ "" | absURL }}"><strong>{{ .Site.Params.Title }}</strong></a> | <a class="text-muted"
+        href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA
+        4.0</a>.
       <div class="d-block d-md-inline-block">
         {{ .Site.Params.footer | safeHTML }}.
       </div>
@@ -14,6 +16,13 @@
       <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{ end -}}
     </ul>
+
+    <div class="mt-2">
+      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">
+        <img alt="CC BY-NC 4.0" style="max-height: 28px;"
+          src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" />
+        </a>
+    </div>
 
   </div>
 </footer>
