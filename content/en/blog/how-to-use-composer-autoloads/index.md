@@ -56,7 +56,7 @@ $obj = new DemoClass;
 
 Here we used the built-in php function `spl_autoload_register()` to register our autoload function.
 
-### What this does is it tells php ?
+### What this does is it tells php?
 
 "Hey if you can't find the class yourself, let me find it for you. If I can't find it, then throw an error."
 
