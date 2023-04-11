@@ -10,7 +10,7 @@ images: ["thumbnail.png"]
 categories: ["PHP"]
 tags: ["php", "composer", "composer.json", "autoload", "note"]
 contributors: ["Sugeng Sulistiyawan"]
-pinned: false
+pinned: true
 homepage: false
 ---
 

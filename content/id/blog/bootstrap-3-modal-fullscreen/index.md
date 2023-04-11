@@ -1,7 +1,7 @@
 ---
 title: "Modal Full Screen Bootstrap 3"
-description: "Custom modal bootstrap 3 supaya tampil full screen dan responsive."
-excerpt: "Custom modal bootstrap 3 supaya tampil full screen dan responsive. Demo & Preview: https://jsfiddle.net/sugengsulistiyawan/dcjfumqp"
+description: "Custom ukuran modal bootstrap 3 supaya tampil full screen & responsive."
+excerpt: "Custom ukuran modal bootstrap 3 supaya tampil full screen & responsive."
 date: 2023-04-06T13:03:18+07:00
 lastmod: 2023-04-06T13:03:22+07:00
 draft: false
@@ -16,7 +16,7 @@ homepage: false
 
 Modal Full Screen Bootstrap 3
 
-CSS
+### CSS
 
 ```css
 .modal-fullscreen {
@@ -65,7 +65,7 @@ CSS
 }
 ```
 
-HTML
+### HTML
 
 ```html
 <!-- Button trigger modal -->
@@ -198,6 +198,8 @@ HTML
 </div>
 ```
 
-Cukup Tambahkan `.modal-fullscreen` pada `.modal-dialog`
+> Cukup Tambahkan `.modal-fullscreen` pada `.modal-dialog`
 
-Demo & Preview: [https://jsfiddle.net/sugengsulistiyawan/dcjfumqp](https://jsfiddle.net/sugengsulistiyawan/dcjfumqp)
+#### Demo & Preview:
+
+<script async src="//jsfiddle.net/sugengsulistiyawan/dcjfumqp/embed/result/"></script>
