@@ -94,7 +94,7 @@ Classmap as its name implies creates a mapping of all the classes inside the spe
 The mapping is done by scanning for all classes inside `.php` and `.inc` files in the specified directories.
 This is the fastest way of autoloading since it uses array lookup for finding the classes.
 
-# PSR-0
+#### PSR-0
 
 This is the PSR standard for autoloading files before PSR-4 and it is now **Deprecated**.
 You can define the PSR-0 rules in the config file as a mapping from namespace to paths, relative to the package/application root.
