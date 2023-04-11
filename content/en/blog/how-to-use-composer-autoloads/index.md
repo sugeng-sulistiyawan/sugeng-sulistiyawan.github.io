@@ -7,8 +7,8 @@ lastmod: 2023-04-11T21:38:58+07:00
 draft: false
 weight: 60
 images: ["thumbnail.png"]
-categories: ["Composer"]
-tags: ["composer", "composer.json", "autoload", "note"]
+categories: ["PHP"]
+tags: ["php", "composer", "composer.json", "autoload", "note"]
 contributors: ["Sugeng Sulistiyawan"]
 pinned: false
 homepage: false

@@ -7,8 +7,8 @@ lastmod: 2023-04-06T13:03:22+07:00
 draft: false
 weight: 60
 images: ["thumbnail.png"]
-categories: ["Bootstrap 3"]
-tags: ["modal", "fullscreen", "responsive", "override"]
+categories: ["Bootstrap"]
+tags: ["css", "bootstrap", "bootstrap 3", "modal", "fullscreen", "responsive", "override"]
 contributors: ["Sugeng Sulistiyawan"]
 pinned: false
 homepage: false
