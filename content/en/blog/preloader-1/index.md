@@ -18,6 +18,12 @@ Preloader HTML & CSS Style 1.
 
 Very Simple Loader use HTML & CSS only.
 
+---
+
+{{< youtube id="Hm6XQa0rz2w" autoplay="true" title="Preloader HTML & CSS Style 1" >}}
+
+---
+
 ### CSS
 
 ```css
