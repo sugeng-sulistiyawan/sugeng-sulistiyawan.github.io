@@ -149,7 +149,7 @@ This can be useful to load your helper functions. These files will be loaded on 
     "autoload": {
         "files": [
           "src/helpers.php",
-          "src/autoload.php",
+          "src/autoload.php"
         ]
     }
 }
