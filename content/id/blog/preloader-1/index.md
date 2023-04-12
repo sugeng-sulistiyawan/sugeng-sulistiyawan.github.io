@@ -2,7 +2,7 @@
 title: "Preloader HTML & CSS Style 1"
 description: "Very Simple Loader menggunakan HTML & CSS saja."
 excerpt: "Very Simple Loader menggunakan HTML & CSS saja."
-date: 2023-04-12T06:19:59+07:00
+date: 2020-05-11T06:19:59+07:00
 lastmod: 2023-04-12T06:19:55+07:00
 draft: false
 weight: 60

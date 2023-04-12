@@ -63,18 +63,34 @@ Modal Full Screen Bootstrap 3
   align-items: center;
   justify-content: flex-end;
 }
+
+/* Just for Demo */
+#btn-group-demo {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+}
 ```
 
 ### HTML
 
 ```html
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Launch demo modal with long content
-</button>
+<div id="btn-group-demo">
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">
+    Launch demo modal with long content
+  </button>
+
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -198,7 +214,7 @@ Modal Full Screen Bootstrap 3
 </div>
 ```
 
-> Cukup Tambahkan `.modal-fullscreen` pada `.modal-dialog`
+> Just place `.modal-fullscreen` to `.modal-dialog`
 
 #### Demo & Preview:
 
