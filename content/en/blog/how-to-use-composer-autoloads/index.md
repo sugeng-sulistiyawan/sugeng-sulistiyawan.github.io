@@ -170,7 +170,7 @@ So autoloading will be faster. If a PSR-4 class is not found in the generated cl
 
 Classmap generation can be enabled in any of the following ways.
 
-- Set `"optimize-autoloader": true` inside the config key of `composer.json`
+- Set `"optimize-autoloader": true` inside the `config` key of `composer.json`
 - Call `composer install` or `composer update` with `-o` / `--optimize-autoloader`
 - Call `composer dump-autoload` with `-o` / `--optimize`
 
