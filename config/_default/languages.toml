@@ -1,11 +1,3 @@
-[id]
-  languageName = "Bahasa Indonesia"
-  contentDir = "content/id"
-  weight = 10
-  [id.params]
-    languageISO = "ID"
-    languageTag = "id-ID"
-
 [en]
   languageName = "English"
   contentDir = "content/en"
@@ -13,3 +5,13 @@
   [en.params]
     languageISO = "EN"
     languageTag = "en-US"
+    BookDateFormat = 'Jan 2, 2006'
+
+[id]
+  languageName = "Bahasa Indonesia"
+  contentDir = "content/id"
+  weight = 10
+  [id.params]
+    languageISO = "ID"
+    languageTag = "id-ID"
+    BookDateFormat = '2 Jan 2006'

@@ -37,3 +37,13 @@
 
 - id: 'blog-meta-min-read'
   translation: 'mnt dibaca'
+
+# Blog Single
+- id: related-posts
+  translation: Post Terkait
+
+- id: last-modified-on
+  translation: Terakhir diperbarui pada
+
+- id: edit-this-page-on
+  translation: Edit halaman ini di

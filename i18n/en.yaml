@@ -37,3 +37,13 @@
 
 - id: 'blog-meta-min-read'
   translation: 'min read'
+
+# Blog Single
+- id: related-posts
+  translation: Related Posts
+
+- id: last-modified-on
+  translation: Last modified on
+
+- id: edit-this-page-on
+  translation: Edit this page on

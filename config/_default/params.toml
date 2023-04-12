@@ -4,14 +4,14 @@
 title = "Sugeng Sulistiyawan"
 titleSeparator = "-"
 titleAddition = "Sugeng Sulistiyawan Portfolio"
-description = "Mengalir Laksana Air, Menerjang Laksana Ombak."
+description = "Always Learning and Keep Learning."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
 images = ["og.png"]
-ogLocale = "id_ID"
+ogLocale = "en_US"
 domainTLD = "sugengsulistiyawan.my.id"
 titleHome = "Sugeng Sulistiyawan"
 
@@ -27,7 +27,7 @@ schemaAuthor = "Sugeng Sulistiyawan"
 schemaAuthorTwitter = ""
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/sugengsulistiyawan"
 schemaAuthorGitHub = "https://github.com/sugeng-sulistiyawan"
-schemaLocale = "id-ID"
+schemaLocale = "en-US"
 schemaLogo = "logo.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
@@ -40,7 +40,7 @@ schemaGitHub = "https://github.com/sugeng-sulistiyawan"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
-siteLinksSearchBox = false
+siteLinksSearchBox = true
 
 ## Chrome Browser
 themeColor = "#5d2f86"
@@ -83,8 +83,8 @@ repoHost = "GitHub"
 docsRepo = "https://github.com/sugeng-sulistiyawan/sugeng-sulistiyawan.github.io"
 docsRepoBranch = "main"
 docsRepoSubPath = ""
-editPage = false
-lastMod = false
+editPage = true
+lastMod = true
 
 [sections]
   sectionNav = ["docs", "guides"]
@@ -92,7 +92,7 @@ lastMod = false
 [options]
   lazySizes = true
   clipBoard = true
-  instantPage = true
+  instantPage = false
   flexSearch = true
   searchSectionsShow = []
   searchSectionsIndex = ["blog", "docs"]
