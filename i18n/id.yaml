@@ -36,7 +36,7 @@
   translation: 'dan'
 
 - id: 'blog-meta-min-read'
-  translation: 'mnt dibaca'
+  translation: 'mnt membaca'
 
 # Blog Single
 - id: related-posts
