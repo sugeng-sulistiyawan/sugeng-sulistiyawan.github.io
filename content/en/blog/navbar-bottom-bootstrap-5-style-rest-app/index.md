@@ -8,7 +8,7 @@ draft: false
 weight: 60
 images: ["thumbnail.png"]
 categories: ["Bootstrap"]
-tags: ["css", "bootstrap", "bootstrap 5", "menu", "bottom menu", "responsive", "navbar"]
+tags: ["scss", "css", "bootstrap", "bootstrap 5", "menu", "bottom menu", "responsive", "navbar"]
 contributors: ["Sugeng Sulistiyawan"]
 pinned: false
 homepage: false
@@ -16,37 +16,36 @@ homepage: false
 
 Navbar Bottom Example Bootstrap 5 Style REST Application
 
-### CSS
+### CSS (SCSS)
 
-```css
-:root {
-  --icon-bg-active: var(--bs-pink);
-  --icon-stroke-active: var(--bs-white);
-}
+```scss
+$color-start: #fc466b;
+$color-end: #3f5efb;
 
-.nav-link .nav-icon {
-  text-align: center;
-}
+$icon-height: 2.5rem;
+$icon-padding: 0.25rem;
 
-.nav-link .nav-icon {
-  height: 2.5rem;
-  padding: 0.25rem;
-  border-radius: 1.25rem;
-}
+.navbar.fixed-bottom {
+  .nav-link {
+    .nav-icon {
+      text-align: center;
+      height: $icon-height;
+      padding: $icon-padding;
+      border-radius: $icon-height / 2;
+      svg {
+        height: $icon-height - 2 * $icon-padding;
+      }
+    }
+  }
 
-.nav-link .nav-icon > svg {
-  height: 2rem;
-}
-
-.nav-link.active .nav-icon,
-.nav-link:hover .nav-icon {
-  background: var(--icon-bg-active);
-  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
-}
-
-.nav-link.active .nav-icon > svg,
-.nav-link:hover .nav-icon > svg {
-  stroke: var(--icon-stroke-active);
+  .nav-link.active .nav-icon,
+  .nav-link:hover .nav-icon {
+    background: $color-start;
+    background: linear-gradient(90deg, $color-start 0%, $color-end 100%);
+    svg {
+      stroke: var(--bs-white);
+    }
+  }
 }
 ```
 
