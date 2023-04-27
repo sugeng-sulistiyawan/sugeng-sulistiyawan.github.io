@@ -17,7 +17,7 @@
   translation: "Browse"
 
 - id: alert-text
-  translation: "Hello, World! Have an IDE, Project and want to work with me? Contact me directly via <a class=\"alert-link stretched-link\" href=\"https://wa.me/62816658056\" target=\"_blank\" rel=\"noopener\">Whatsapp</a>!"
+  translation: "Hello, World! Have an IDEA, Project and want to work with me? Contact me directly via <a class=\"alert-link stretched-link\" href=\"https://wa.me/62816658056\" target=\"_blank\" rel=\"noopener\">Whatsapp</a>!"
 
 # Blog Meta
 - id: 'blog-meta-posted'
