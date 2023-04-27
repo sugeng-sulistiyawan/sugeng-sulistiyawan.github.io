@@ -1,7 +1,7 @@
 ---
 title: "Preloader HTML & CSS Style 1"
-description: "Very Simple Loader use HTML & CSS only."
-excerpt: "Very Simple Loader use HTML & CSS only."
+description: "Very Simple Loader use HTML & CSS only style 1."
+excerpt: "Very Simple Loader use HTML & CSS only style 1."
 date: 2020-05-11T06:19:59+07:00
 lastmod: 2023-04-12T06:19:55+07:00
 draft: false
@@ -36,7 +36,7 @@ Very Simple Loader use HTML & CSS only.
   background-color: #d50000;
 }
 
-#preloader>.loader {
+#preloader > .loader {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,25 +45,25 @@ Very Simple Loader use HTML & CSS only.
   transform: translate(-50%, -50%);
 }
 
-#preloader>.loader>.dot,
-#preloader>.loader>.dots>span {
+#preloader > .loader > .dot,
+#preloader > .loader > .dots > span {
   width: 24px;
   height: 24px;
   background-color: #fff;
 }
 
-#preloader>.loader>.dot {
+#preloader > .loader > .dot {
   position: absolute;
   animation: dot 1.2s infinite;
   transform: translateX(0);
 }
 
-#preloader>.loader>.dots {
+#preloader > .loader > .dots {
   animation: dots 1.2s infinite;
   transform: translateX(32px);
 }
 
-#preloader>.loader>.dots>span {
+#preloader > .loader > .dots > span {
   display: block;
   float: left;
   margin-left: 8px;
@@ -101,4 +101,9 @@ Very Simple Loader use HTML & CSS only.
 
 #### Demo & Preview:
 
-<script async src="//jsfiddle.net/sugengsulistiyawan/jhLftkuy/embed/result/"></script>
+<p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="result" data-slug-hash="PoyjPWd" data-user="sugeng-sulistiyawan" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/sugeng-sulistiyawan/pen/PoyjPWd">
+  Preloader 1</a> by Sugeng Sulistiyawan (<a href="https://codepen.io/sugeng-sulistiyawan">@sugeng-sulistiyawan</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
