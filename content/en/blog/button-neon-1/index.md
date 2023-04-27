@@ -1,9 +1,9 @@
 ---
 title: "Button Neon HTML & CSS Style 1"
-description: "Button Neon use HTML & CSS only."
-excerpt: "Button Neon use HTML & CSS only."
+description: "Button Neon use HTML & CSS only style 1."
+excerpt: "Button Neon use HTML & CSS only style 1."
 date: 2020-05-12T14:20:06+07:00
-lastmod: 2023-04-12T14:20:11+07:00
+lastmod: 2023-04-27T16:04:07+07:00
 draft: false
 weight: 60
 images: ["thumbnail.png"]
@@ -64,60 +64,60 @@ Button Neon use HTML & CSS only.
   transition-delay: 0.8s;
 }
 
-.btn.btn-neon>span {
+.btn.btn-neon > span {
   position: absolute;
   display: block;
 }
 
-.btn.btn-neon>span:nth-child(odd) {
+.btn.btn-neon > span:nth-child(odd) {
   width: 100%;
   height: 2px;
 }
 
-.btn.btn-neon>span:nth-child(even) {
+.btn.btn-neon > span:nth-child(even) {
   width: 2px;
   height: 100%;
 }
 
-.btn.btn-neon>span:nth-child(1) {
+.btn.btn-neon > span:nth-child(1) {
   top: 0;
   left: -100%;
 }
 
-.btn.btn-neon>span:nth-child(2) {
+.btn.btn-neon > span:nth-child(2) {
   right: 0;
   top: -100%;
 }
 
-.btn.btn-neon>span:nth-child(3) {
+.btn.btn-neon > span:nth-child(3) {
   bottom: 0;
   right: -100%;
 }
 
-.btn.btn-neon>span:nth-child(4) {
+.btn.btn-neon > span:nth-child(4) {
   left: 0;
   bottom: -100%;
 }
 
-.btn.btn-neon:hover>span {
+.btn.btn-neon:hover > span {
   transition: 0.5s;
 }
 
-.btn.btn-neon:hover>span:nth-child(1) {
+.btn.btn-neon:hover > span:nth-child(1) {
   left: 100%;
 }
 
-.btn.btn-neon:hover>span:nth-child(2) {
+.btn.btn-neon:hover > span:nth-child(2) {
   top: 100%;
   transition-delay: 0.2s;
 }
 
-.btn.btn-neon:hover>span:nth-child(3) {
+.btn.btn-neon:hover > span:nth-child(3) {
   right: 100%;
   transition-delay: 0.4s;
 }
 
-.btn.btn-neon:hover>span:nth-child(4) {
+.btn.btn-neon:hover > span:nth-child(4) {
   bottom: 100%;
   transition-delay: 0.6s;
 }
@@ -133,19 +133,19 @@ Button Neon use HTML & CSS only.
     0 0 40px var(--success);
 }
 
-.btn.btn-neon.btn-success>span:nth-child(1) {
+.btn.btn-neon.btn-success > span:nth-child(1) {
   background: linear-gradient(90deg, transparent, var(--success));
 }
 
-.btn.btn-neon.btn-success>span:nth-child(2) {
+.btn.btn-neon.btn-success > span:nth-child(2) {
   background: linear-gradient(180deg, transparent, var(--success));
 }
 
-.btn.btn-neon.btn-success>span:nth-child(3) {
+.btn.btn-neon.btn-success > span:nth-child(3) {
   background: linear-gradient(270deg, transparent, var(--success));
 }
 
-.btn.btn-neon.btn-success>span:nth-child(4) {
+.btn.btn-neon.btn-success > span:nth-child(4) {
   background: linear-gradient(0deg, transparent, var(--success));
 }
 
@@ -160,19 +160,19 @@ Button Neon use HTML & CSS only.
     0 0 40px var(--warning);
 }
 
-.btn.btn-neon.btn-warning>span:nth-child(1) {
+.btn.btn-neon.btn-warning > span:nth-child(1) {
   background: linear-gradient(90deg, transparent, var(--warning));
 }
 
-.btn.btn-neon.btn-warning>span:nth-child(2) {
+.btn.btn-neon.btn-warning > span:nth-child(2) {
   background: linear-gradient(180deg, transparent, var(--warning));
 }
 
-.btn.btn-neon.btn-warning>span:nth-child(3) {
+.btn.btn-neon.btn-warning > span:nth-child(3) {
   background: linear-gradient(270deg, transparent, var(--warning));
 }
 
-.btn.btn-neon.btn-warning>span:nth-child(4) {
+.btn.btn-neon.btn-warning > span:nth-child(4) {
   background: linear-gradient(0deg, transparent, var(--warning));
 }
 
@@ -187,19 +187,19 @@ Button Neon use HTML & CSS only.
     0 0 40px var(--danger);
 }
 
-.btn.btn-neon.btn-danger>span:nth-child(1) {
+.btn.btn-neon.btn-danger > span:nth-child(1) {
   background: linear-gradient(90deg, transparent, var(--danger));
 }
 
-.btn.btn-neon.btn-danger>span:nth-child(2) {
+.btn.btn-neon.btn-danger > span:nth-child(2) {
   background: linear-gradient(180deg, transparent, var(--danger));
 }
 
-.btn.btn-neon.btn-danger>span:nth-child(3) {
+.btn.btn-neon.btn-danger > span:nth-child(3) {
   background: linear-gradient(270deg, transparent, var(--danger));
 }
 
-.btn.btn-neon.btn-danger>span:nth-child(4) {
+.btn.btn-neon.btn-danger > span:nth-child(4) {
   background: linear-gradient(0deg, transparent, var(--danger));
 }
 
@@ -250,4 +250,9 @@ body {
 
 #### Demo & Preview:
 
-<script async src="//jsfiddle.net/sugengsulistiyawan/8rzboL0u/embed/result/"></script>
+<p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="result" data-slug-hash="eYPRpZN" data-user="sugeng-sulistiyawan" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/sugeng-sulistiyawan/pen/eYPRpZN">
+  Button Neon 1</a> by Sugeng Sulistiyawan (<a href="https://codepen.io/sugeng-sulistiyawan">@sugeng-sulistiyawan</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
