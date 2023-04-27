@@ -83,8 +83,8 @@ repoHost = "GitHub"
 docsRepo = "https://github.com/sugeng-sulistiyawan/sugeng-sulistiyawan.github.io"
 docsRepoBranch = "main"
 docsRepoSubPath = ""
-editPage = true
-lastMod = true
+editPage = false
+lastMod = false
 
 [sections]
   sectionNav = ["docs", "guides"]
