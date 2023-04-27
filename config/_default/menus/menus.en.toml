@@ -15,15 +15,34 @@
 
 [[main]]
   name = "Open Source"
-  weight = 30
   identifier = "opensource"
   url = "/docs/opensource"
+  weight = 30
 
 [[main]]
   name = "Yii2 Framework"
-  weight = 40
   identifier = "opensource-yii2"
   url = "/docs/opensource/yii2/"
+  weight = 40
+  parent = "opensource"
+
+[[main]]
+  name = "Yii2 Toastr"
+  url = "/docs/opensource/yii2/toastr"
+  weight = 10
+  parent = "opensource-yii2"
+
+[[main]]
+  name = "Yii2 Dropify"
+  url = "/docs/opensource/yii2/dropify"
+  weight = 15
+  parent = "opensource-yii2"
+
+[[main]]
+  name = "Other"
+  identifier = "opensource-other"
+  url = "/docs/opensource/other/"
+  weight = 99
   parent = "opensource"
 
 # [[main]]

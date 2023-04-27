@@ -15,16 +15,22 @@
 
 [[main]]
   name = "Open Source"
-  weight = 30
   identifier = "opensource"
   url = "/docs/opensource"
+  weight = 30
 
 [[main]]
   name = "Yii2 Framework"
-  weight = 40
-  identifier = "opensource-yii2"
   url = "/docs/opensource/yii2/"
+  weight = 40
   parent = "opensource"
+
+[[main]]
+  name = "Lainnya"
+  url = "/docs/opensource/other/"
+  weight = 99
+  parent = "opensource"
+
 
 # [[main]]
 #   name = "Tutorial"
