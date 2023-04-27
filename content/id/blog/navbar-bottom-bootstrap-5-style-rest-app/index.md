@@ -155,7 +155,8 @@ $icon-padding: 0.25rem;
 </div>
 ```
 
-> Untuk referensi dan info lebih lengkap lihat di [https://getbootstrap.com/docs/5.0/components/navbar/#placement](https://getbootstrap.com/docs/5.0/components/navbar/#placement)
+> - Untuk referensi dan info lebih lengkap lihat di [https://getbootstrap.com/docs/5.0/components/navbar/#placement](https://getbootstrap.com/docs/5.0/components/navbar/#placement)
+> - Untuk Icon / SVG [https://feathericons.com/](https://feathericons.com/)
 
 #### Demo & Preview:
 
