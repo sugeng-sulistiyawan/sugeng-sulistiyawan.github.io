@@ -17,7 +17,7 @@ toc: true
 
 ---
 
-> Yii2 Dropify uses [Dropify](https://github.com/JeremyFagis/dropify) <br> Demo: http://jeremyfagis.github.io/dropify
+> Yii2 Dropify uses [Dropify](https://github.com/JeremyFagis/dropify) <br> Demo: [http://jeremyfagis.github.io/dropify](http://jeremyfagis.github.io/dropify)
 
 ## Instalation
 
