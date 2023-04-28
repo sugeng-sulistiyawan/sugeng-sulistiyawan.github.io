@@ -21,5 +21,8 @@
     "yii2-seeder",
     "yii2-slick",
     "yii2-barcode-generator"
+  ],
+  "dev": [
+    "yii2-flysystem"
   ]
 }
