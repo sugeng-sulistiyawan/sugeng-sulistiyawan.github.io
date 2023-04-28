@@ -1,7 +1,7 @@
 ---
-title: "Other"
-description: "My More Open Sources."
-lead: "My More Open Sources."
+title: "Lainnya"
+description: "Proyek Open Sources Saya Lainnya."
+lead: "Proyek Open Sources Saya Lainnya."
 date: 2023-04-06T02:28:26+07:00
 lastmod: 2023-04-27T16:35:41+07:00
 draft: false

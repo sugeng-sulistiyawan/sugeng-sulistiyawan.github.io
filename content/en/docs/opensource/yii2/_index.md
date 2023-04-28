@@ -10,6 +10,6 @@ menu:
   docs:
     parent: "opensource"
     identifier: "opensource-yii2"
-weight: 40
+weight: 45
 toc: true
 ---

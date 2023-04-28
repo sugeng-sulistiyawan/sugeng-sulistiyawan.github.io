@@ -21,8 +21,7 @@ toc: true
 
 ## Instalation
 
-Package is available on [Packagist](https://packagist.org/packages/diecoding/yii2-toastr),
-you can install it using [Composer](https://getcomposer.org).
+Package is available on [Packagist](https://packagist.org/packages/diecoding/yii2-toastr), you can install it using [Composer](https://getcomposer.org).
 
 ```shell
 composer require diecoding/yii2-toastr "^1.0"
