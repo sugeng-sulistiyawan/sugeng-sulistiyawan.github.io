@@ -65,7 +65,8 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x620 Center" # normalize image size
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\" target=\"_blank\" rel=\"noopener\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\" target=\"_blank\" rel=\"noopener\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\" target=\"_blank\" rel=\"noopener\">Doks</a>"
+# footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\" target=\"_blank\" rel=\"noopener\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\" target=\"_blank\" rel=\"noopener\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\" target=\"_blank\" rel=\"noopener\">Doks</a>"
+footer = "Powered by <a class=\"text-muted\" href=\"https://gohugo.io/\" target=\"_blank\" rel=\"noopener\">Hugo</a> and <a class=\"text-muted\" href=\"https://getdoks.org/\" target=\"_blank\" rel=\"noopener\">Doks</a>"
 
 # Feed
 copyRight = "Copyright © 2023 Sugeng Sulistiyawan"
