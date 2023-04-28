@@ -97,63 +97,63 @@
           {{ end }}
         </div>
 
-    </div>
-  </div>
-
-  <div class="position-absolute w-100" style="left: 0; z-index: -1">
-    <div class="bg-dots" style="height: 15rem;"></div>
-  </div>
-
-  <div class="row justify-content-center align-items-center gap-3">
-
-    {{ range $main := index $.Site.Data "stats" "main" }}
-
-    <div class="{{ $main.col }}">
-      <img src="{{ $main.stat }}&hide_border=true&theme=buefy&bg_color=00000000" class="{{ $main.class }} img-show-light"
-        style="display: none;" />
-      <img src="{{ $main.stat }}&hide_border=true&theme=dark&bg_color=00000000" class="{{ $main.class }} img-show-dark"
-        style="display: none;" />
+      </div>
     </div>
 
-    {{ end }}
-
-  </div>
-
-  <div class="text-center mb-5">
-    <hr>
-    <h3 class="mt-5"><strong>Top Repositories</strong></h3>
-  </div>
-
-  <div class="row justify-content-center align-items-center gap-3">
-
-    {{ range $top := index $.Site.Data "stats" "top" }}
-
-    <div class="col-lg-6">
-      <a href="{{ $top.url }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ $top.stat }}&hide_border=true&theme=yeblu" class="w-100 img-show-light" style="display: none;" />
-        <img src="{{ $top.stat }}&hide_border=true&theme=swift" class="w-100 img-show-dark" style="display: none;" />
-      </a>
+    <div class="position-absolute w-100" style="left: 0; z-index: -1">
+      <div class="bg-dots" style="height: 15rem;"></div>
     </div>
 
-    {{ end }}
+    <div class="row justify-content-center align-items-center gap-3">
 
-    <div class="clearfix"></div>
+      {{ range $main := index $.Site.Data "stats" "main" }}
 
-    {{ range $pin := index $.Site.Data "stats" "pin" }}
+      <div class="{{ $main.col }}">
+        <img src="{{ $main.stat }}&hide_border=true&theme=buefy&bg_color=00000000"
+          class="{{ $main.class }} show-light hide-dark" />
+        <img src="{{ $main.stat }}&hide_border=true&theme=dark&bg_color=00000000"
+          class="{{ $main.class }} show-dark hide-light" />
+      </div>
 
-    <div class="col-lg-6">
-      <a href="https://github.com/sugeng-sulistiyawan/{{ $pin }}" target="_blank" rel="noopener noreferrer">
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=swift"
-          class="w-100 img-show-light" style="display: none;" />
-        <img
-          src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=aura"
-          class="w-100 img-show-dark" style="display: none;" />
-      </a>
+      {{ end }}
+
     </div>
 
-    {{ end }}
-  </div>
+    <div class="text-center mb-5">
+      <hr>
+      <h3 class="mt-5"><strong>Top Repositories</strong></h3>
+    </div>
+
+    <div class="row justify-content-center align-items-center gap-3">
+
+      {{ range $top := index $.Site.Data "stats" "top" }}
+
+      <div class="col-lg-6">
+        <a href="{{ $top.url }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ $top.stat }}&hide_border=true&theme=yeblu" class="w-100 show-light hide-dark" />
+          <img src="{{ $top.stat }}&hide_border=true&theme=swift" class="w-100 show-dark hide-light" />
+        </a>
+      </div>
+
+      {{ end }}
+
+      <div class="clearfix"></div>
+
+      {{ range $pin := index $.Site.Data "stats" "pin" }}
+
+      <div class="col-lg-6">
+        <a href="https://github.com/sugeng-sulistiyawan/{{ $pin }}" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=swift"
+            class="w-100 show-light hide-dark" />
+          <img
+            src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=aura"
+            class="w-100 show-dark hide-light" />
+        </a>
+      </div>
+
+      {{ end }}
+    </div>
 
 </section>
 {{ end }}
