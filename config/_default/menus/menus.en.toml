@@ -22,13 +22,13 @@
 [[main]]
   name = "Yii2 Framework"
   url = "/docs/opensource/yii2/"
-  weight = 40
+  weight = 45
   parent = "opensource"
 
 [[main]]
   name = "Github"
   url = "/docs/opensource/github/"
-  weight = 45
+  weight = 40
   parent = "opensource"
 
 [[main]]
