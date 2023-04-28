@@ -68,8 +68,8 @@ rel  = "sitemap"
 [minify.tdewolff.html]
   keepWhitespace = false
 
-[minify]
-  disableJS = true
+# [minify]
+#   disableJS = true
 
 [related]
   threshold = 80

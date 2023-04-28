@@ -67,7 +67,7 @@ or add to the require section of your `composer.json` file.
 ### Basic Usage
 
 ```php
-/** @var \diecoding\aws\s3\Service $s3 */
+
 $s3 = Yii::$app->get('s3');
 // or
 $s3 = Yii::$app->s3;
@@ -75,7 +75,6 @@ $s3 = Yii::$app->s3;
 // Usage of the command factory and additional params
 // ==================================================
 
-/** @var \Aws\ResultInterface $result */
 $result = $s3->commands()->get('filename.ext')->saveAs('/path/to/local/file.ext')->execute();
 
 $result = $s3->commands()->put('filename.ext', 'body')->withContentType('text/plain')->execute();
@@ -88,19 +87,15 @@ $result = $s3->commands()->restore('filename.ext', $days = 7)->execute();
 
 $result = $s3->commands()->list('path/')->execute();
 
-/** @var bool $exist */
 $exist = $s3->commands()->exist('filename.ext')->execute();
 
-/** @var string $url */
 $url = $s3->commands()->getUrl('filename.ext')->execute();
 
-/** @var string $signedUrl */
 $signedUrl = $s3->commands()->getPresignedUrl('filename.ext', '+2 days')->execute();
 
 // Short syntax
 // ============
 
-/** @var \Aws\ResultInterface $result */
 $result = $s3->get('filename.ext');
 
 $result = $s3->put('filename.ext', 'body');
@@ -113,19 +108,15 @@ $result = $s3->restore('filename.ext', $days = 7);
 
 $result = $s3->list('path/');
 
-/** @var bool $exist */
 $exist = $s3->exist('filename.ext');
 
-/** @var string $url */
 $url = $s3->getUrl('filename.ext');
 
-/** @var string $signedUrl */
 $signedUrl = $s3->getPresignedUrl('filename.ext', '+2 days');
 
 // Asynchronous execution
 // ======================
 
-/** @var \GuzzleHttp\Promise\PromiseInterface $promise */
 $promise = $s3->commands()->get('filename.ext')->async()->execute();
 
 $promise = $s3->commands()->put('filename.ext', 'body')->async()->execute();
@@ -140,20 +131,17 @@ $promise = $s3->commands()->list('path/')->async()->execute();
 ### Advanced Usage
 
 ```php
-/** @var \diecoding\aws\s3\Service $s3 */
+
 $s3 = Yii::$app->get('s3');
 // or
 $s3 = Yii::$app->s3;
 
-/** @var \diecoding\aws\s3\commands\GetCommand $command */
 $command = $s3->create(GetCommand::class);
 $command->inBucket('my-another-bucket')->byFilename('filename.ext')->saveAs('/path/to/local/file.ext');
 
-/** @var \Aws\ResultInterface $result */
 $result = $s3->execute($command);
 
 // or async
-/** @var \GuzzleHttp\Promise\PromiseInterface $promise */
 $promise = $s3->execute($command->async());
 ```
 
@@ -245,16 +233,14 @@ class MyCommandHandler extends Handler
 And usage this command:
 
 ```php
-/** @var \diecoding\aws\s3\Service $s3 */
+
 $s3 = Yii::$app->get('s3');
 // or
 $s3 = Yii::$app->s3;
 
-/** @var \app\components\s3\commands\MyCommand $command */
 $command = $s3->create(MyCommand::class);
 $command->withSomething('some value')->withOption('OptionName', 'value');
 
-/** @var \Aws\ResultInterface $result */
 $result = $s3->execute($command);
 ```
 
@@ -318,9 +304,7 @@ allow to execute this command immediately: `$command->withSomething('some value'
 Attach the Trait to the Model/ActiveRecord with some media attribute that will be saved in S3:
 
 ```php
-/**
- * @property string|null $file
- */
+
 class Model extends \yii\db\ActiveRecord
 {
     use \diecoding\aws\s3\traits\ModelTrait;
@@ -334,10 +318,6 @@ class Model extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     * @see https://github.com/sugeng-sulistiyawan/yii2-aws-s3/blob/main/src/traits/ModelTrait.php#L172
-     */
     protected function attributePaths()
     {
         return [

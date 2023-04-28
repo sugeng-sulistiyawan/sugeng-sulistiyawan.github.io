@@ -66,35 +66,22 @@ or add to the require section of your `composer.json` file.
     'seeder' => [
         'class' => \diecoding\seeder\SeederController::class,
 
-        /** @var string the default command action. */
         'defaultAction' => 'seed',
 
-        /** @var string seeder path, support path alias */
         'seederPath' => '@console/seeder',
 
-        /** @var string seeder namespace */
         'seederNamespace' => 'console\seeder',
 
-        /**
-         * @var string this class look like `$this->seederNamespace\Seeder`
-         * default seeder class run if no class selected,
-         * must instance of `\diecoding\seeder\TableSeeder`
-         */
         'defaultSeederClass' => 'Seeder',
 
-        /** @var string tables path, support path alias */
         'tablesPath' => '@console/seeder/tables',
 
-        /** @var string seeder table namespace */
         'tableSeederNamespace' => 'console\seeder\tables',
 
-        /** @var string model namespace */
         'modelNamespace' => 'common\models',
 
-        /** @var string path view template table seeder, support path alias */
         'templateSeederFile' => '@diecoding/seeder/views/Seeder.php',
 
-        /** @var string path view template seeder, support path alias */
         'templateTableFile' => '@diecoding/seeder/views/TableSeeder.php',
     ],
     // ...
@@ -193,7 +180,7 @@ public $truncateTable = true;
 
 // truncate table
 $this->disableForeignKeyChecks();
-$this->truncateTable(/* table names */);
+$this->truncateTable("table_name");
 $this->enableForeignKeyChecks();
 ```
 
@@ -208,7 +195,7 @@ At the end of every Seeder, if any columns have been forgotten, a message with a
 ```shell
     > ########################### MISSING COLUMNS ############################
     > #                                                                      #
-    > #    TABLE: TableName                                                  #
+    > #    TABLE: table_name                                                  #
     > # -------------------------------------------------------------------- #
     > #    - full_name => varchar(1)                                         #
     > #    - birth_date => date                                              #
@@ -231,16 +218,9 @@ to run, use `yii seeder` or `yii seeder [name]`
 **`Seeder` location in `console\seeder`**
 
 ```php
-/**
- * Default Seeder
- */
+
 class Seeder extends TableSeeder
 {
-    /**
-     * Default execution
-     *
-     * @return void
-     */
     public function run()
     {
         ModelTableSeeder::create()->run();
