@@ -336,7 +336,6 @@ class Model extends \yii\db\ActiveRecord
 
     /**
      * @inheritdoc
-     * @see https://github.com/sugeng-sulistiyawan/yii2-aws-s3/blob/main/src/traits/ModelTrait.php#L172
      */
     protected function attributePaths()
     {
