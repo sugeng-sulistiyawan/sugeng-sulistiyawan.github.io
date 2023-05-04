@@ -140,9 +140,6 @@ return [
 Attach the Trait to the `Model/ActiveRecord` with some media attribute that will be saved in Flysystem (fs):
 
 ```php
-/**
- * @property string|null $file
- */
 class Model extends \yii\db\ActiveRecord
 {
     use \diecoding\flysystem\traits\ModelTrait;
@@ -156,9 +153,6 @@ class Model extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
     protected function attributePaths()
     {
         return [
