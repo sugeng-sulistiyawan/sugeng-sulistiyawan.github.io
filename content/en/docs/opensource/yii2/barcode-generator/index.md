@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "opensource-yii2"
-weight: 25
+weight: 30
 toc: true
 ---
 

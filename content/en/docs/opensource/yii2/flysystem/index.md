@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "opensource-yii2"
-weight: 35
+weight: 20
 toc: true
 ---
 
@@ -27,13 +27,13 @@ This extension provides [Flysystem 3](https://flysystem.thephpleague.com) integr
 Package is available on [Packagist](https://packagist.org/packages/diecoding/yii2-flysystem), you can install it using [Composer](https://getcomposer.org).
 
 ```shell
-composer require diecoding/yii2-flysystem "@dev"
+composer require diecoding/yii2-flysystem "^1.0"
 ```
 
 or add to the require section of your `composer.json` file.
 
 ```shell
-"diecoding/yii2-flysystem": "@dev"
+"diecoding/yii2-flysystem": "^1.0"
 ```
 
 ## Dependencies
@@ -44,11 +44,12 @@ or add to the require section of your `composer.json` file.
 
 ## Dev. Dependencies
 
-- [league/flysystem-flysystem-v3](https://github.com/thephpleague/flysystem-flysystem-v3)
+- [league/flysystem-aws-s3-v3](https://github.com/thephpleague/flysystem-aws-s3-v3)
+- [league/flysystem-ftp](https://github.com/thephpleague/flysystem-ftp)
 
-## Configuring
+## Configuration
 
-### Local filesystem
+### Local Filesystem
 
 Configure application `components` as follows
 
@@ -59,52 +60,29 @@ return [
         // ...
         'fs' => [
             'class'  => \diecoding\flysystem\LocalComponent::class,
-            'path'   => dirname(dirname(__DIR__)) . '/storage',       // or you can use @alias
+            'path'   => dirname(dirname(__DIR__)) . '/storage', // or you can use @alias
             'key'    => 'my-key',
             'secret' => 'my-secret',
-            'action' => '/site/file',                                 // action for get url file
+            'action' => '/site/file', // action for get url file
             'prefix' => '',
             // 'cipherAlgo' => 'aes-128-cbc',
         ],
     ],
-    // ...
 ];
 ```
 
-Configure `action` in `controller` as follows
-
-> This example at `SiteController` for `/site/file`
-
-```php
-class SiteController extends Controller
-{
-    //...
-    public function actions()
-    {
-        return [
-            // ...
-            'file' => [
-                'class' => \diecoding\flysystem\actions\LocalAction::class,
-                // 'component' => 'fs',
-            ],
-        ];
-    }
-    // ...
-}
-```
-
-### AWS S3 filesystem
+### AWS S3 Filesystem
 
 Either run
 
 ```shell
-composer require league/flysystem-flysystem-v3:^3.15
+composer require league/flysystem-aws-s3-v3:^3.15
 ```
 
 or add
 
 ```shell
-"league/flysystem-flysystem-V3": "^3.12"
+"league/flysystem-aws-s3-V3": "^3.15"
 ```
 
 to the `require` section of your `composer.json` file and configure application `components` as follows
@@ -129,7 +107,115 @@ return [
             // 'credentials'          => [],
         ],
     ],
+];
+```
+
+### FTP Filesystem
+
+Either run
+
+```shell
+composer require league/flysystem-ftp:^3.15
+```
+
+or add
+
+```shell
+"league/flysystem-aws-s3-V3": "^3.15"
+```
+
+to the `require` section of your `composer.json` file and configure application `components` as follows
+
+```php
+return [
     // ...
+    'components' => [
+        // ...
+        'fs' => [
+            'class'    => \diecoding\flysystem\FTPComponent::class,
+            'host'     => 'hostname',
+            'root'     => '/root/path/', // or you can use @alias
+            'username' => 'username',
+            'password' => 'password',
+            // 'port'                            => 21,
+            // 'ssl'                             => false,
+            // 'timeout'                         => 90,
+            // 'utf8'                            => false,
+            // 'passive'                         => true,
+            // 'transferMode'                    => FTP_BINARY,
+            // 'systemType'                      => null,         // 'windows' or 'unix'
+            // 'ignorePassiveAddress'            => null,         // true or false
+            // 'timestampsOnUnixListingsEnabled' => false,
+            // 'recurseManually'                 => true,
+            // 'useRawListOptions'               => null,         // true or false
+            'action' => '/site/file', // action for get url file
+            'prefix' => '',
+        ],
+    ],
+];
+```
+
+## Additional Configuration
+
+### URL File Action Settings
+
+The following adapters have URL File Action generation capabilities:
+
+- Local Component
+- FTP Component
+
+Configure `action` in `controller` as follows
+
+> This example at `SiteController` for `/site/file`
+
+```php
+class SiteController extends Controller
+{
+    //...
+    public function actions()
+    {
+        return [
+            // ...
+            'file' => [
+                'class' => \diecoding\flysystem\actions\FileAction::class,
+                // 'component' => 'fs',
+            ],
+        ];
+    }
+}
+```
+
+> Remember to configure `action` key in `fs` application components as follows
+
+```php
+return [
+    // ...
+    'components' => [
+        // ...
+        'fs' => [
+            // ...
+            'action' => '/site/file', // action for get url file
+        ],
+    ],
+];
+```
+
+### Global Visibility Settings
+
+Configure `fs` application component as follows
+
+```php
+return [
+    //...
+    'components' => [
+        //...
+        'fs' => [
+            //...
+            'config' => [
+                'visibility' => \League\Flysystem\Visibility::PRIVATE,
+            ],
+        ],
+    ],
 ];
 ```
 

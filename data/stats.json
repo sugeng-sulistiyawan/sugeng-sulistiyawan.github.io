@@ -17,12 +17,14 @@
   "pin": [
     "yii2-toastr",
     "yii2-dropify",
+    "yii2-flysystem",
     "yii2-aws-s3",
     "yii2-seeder",
     "yii2-slick",
     "yii2-barcode-generator"
   ],
   "dev": [
-    "yii2-flysystem"
+    "yii2-flysystem",
+    "yii2-slick"
   ]
 }
