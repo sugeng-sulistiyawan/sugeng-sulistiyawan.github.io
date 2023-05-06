@@ -4,6 +4,11 @@
   weight = 10
 
 [[main]]
+  name = "Supporters"
+  url = "/supporters/"
+  weight = 15
+
+[[main]]
   name = "CV"
   url = "/sugeng_sulistiyawan_resume.pdf"
   weight = 100
