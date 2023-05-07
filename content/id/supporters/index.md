@@ -11,8 +11,6 @@ images: []
 
 Saya sangat berterima kasih kepada semua orang dan perusahaan luar biasa yang mendukung pekerjaan open source saya di [GitHub Sponsors](https://github.com/sponsors/sugeng-sulistiyawan).
 
-<iframe src="https://github.com/sponsors/sugeng-sulistiyawan/card" title="GitHub Sponsors" style="border: 0; width: 100%;"></iframe>
-
 ---
 
 ### Top Supporter
