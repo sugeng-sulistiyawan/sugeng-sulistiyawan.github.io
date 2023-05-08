@@ -155,6 +155,48 @@ return [
 ];
 ```
 
+### SFTP Filesystem
+
+Either run
+
+```shell
+composer require league/flysystem-sftp-v3:^3.0
+```
+
+or add
+
+```shell
+"league/flysystem-sftp-v3": "^3.0"
+```
+
+to the `require` section of your `composer.json` file and configure application `components` as follows
+
+```php
+return [
+    // ...
+    'components' => [
+        'fs' => [
+            'class' => \diecoding\flysystem\SftpComponent::class,
+            'host' => 'hostname',
+            'username' => 'username',
+            // 'password' => null, // password (optional, default: null) set to null if privateKey is used
+            'privateKey' => '/path/to/my/private_key', // private key (optional, default: null) can be used instead of password, set to null if password is set
+            // 'passphrase' => 'super-secret-password', // passphrase (optional, default: null), set to null if privateKey is not used or has no passphrase
+            // 'port' => 22,
+            // 'useAgent' => true,
+            // 'timeout' => 10,
+            // 'maxTries' => 4,
+            // 'hostFingerprint' => null,
+            // 'connectivityChecker' => null, // connectivity checker (must be an implementation of `League\Flysystem\PhpseclibV2\ConnectivityChecker` to check if a connection can be established (optional, omit if you don't need some special handling for setting reliable connections)
+            // 'preferredAlgorithms' => [],
+            'root' => '/root/path/', // or you can use @alias
+            'action' => '/site/file',
+            'prefix' => '', 
+        ],
+    ],
+];
+```
+
 ## Additional Configuration
 
 ### URL File Action Settings
