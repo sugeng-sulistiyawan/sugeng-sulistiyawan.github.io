@@ -132,7 +132,7 @@ return [
     'components' => [
         // ...
         'fs' => [
-            'class'    => \diecoding\flysystem\FTPComponent::class,
+            'class'    => \diecoding\flysystem\FtpComponent::class,
             'host'     => 'hostname',
             'root'     => '/root/path/', // or you can use @alias
             'username' => 'username',
@@ -191,7 +191,7 @@ return [
             // 'preferredAlgorithms' => [],
             'root' => '/root/path/', // or you can use @alias
             'action' => '/site/file',
-            'prefix' => '', 
+            'prefix' => '',
         ],
     ],
 ];
@@ -205,6 +205,7 @@ The following adapters have URL File Action generation capabilities:
 
 - Local Component
 - FTP Component
+- SFTP Component
 
 Configure `action` in `controller` as follows
 
