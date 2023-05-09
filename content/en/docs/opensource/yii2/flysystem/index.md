@@ -46,6 +46,7 @@ or add to the require section of your `composer.json` file.
 
 - [league/flysystem-aws-s3-v3](https://github.com/thephpleague/flysystem-aws-s3-v3)
 - [league/flysystem-ftp](https://github.com/thephpleague/flysystem-ftp)
+- [league/flysystem-sftp-v3](https://github.com/thephpleague/flysystem-sftp-v3)
 
 ## Configuration
 
