@@ -41,12 +41,16 @@ or add to the require section of your `composer.json` file.
 - PHP 8.0+
 - [yiisoft/yii2](https://github.com/yiisoft/yii2)
 - [league/flysystem](https://github.com/thephpleague/flysystem)
+- [league/flysystem-path-prefixing](https://github.com/thephpleague/flysystem-path-prefixing)
 
 ## Dev. Dependencies
 
+- [league/flysystem-async-aws-s3](https://github.com/thephpleague/flysystem-async-aws-s3)
 - [league/flysystem-aws-s3-v3](https://github.com/thephpleague/flysystem-aws-s3-v3)
 - [league/flysystem-ftp](https://github.com/thephpleague/flysystem-ftp)
 - [league/flysystem-sftp-v3](https://github.com/thephpleague/flysystem-sftp-v3)
+- [league/flysystem-webdav](https://github.com/thephpleague/flysystem-webdav)
+- [league/flysystem-ziparchive](https://github.com/thephpleague/flysystem-ziparchive)
 
 ## Configuration
 
@@ -60,13 +64,51 @@ return [
     'components' => [
         // ...
         'fs' => [
-            'class'  => \diecoding\flysystem\LocalComponent::class,
-            'path'   => dirname(dirname(__DIR__)) . '/storage', // or you can use @alias
-            'key'    => 'my-key',
-            'secret' => 'my-secret',
-            'action' => '/site/file', // action for get url file
-            'prefix' => '',
-            // 'cipherAlgo' => 'aes-128-cbc',
+            'class' => \diecoding\flysystem\LocalComponent::class,
+            'path' => dirname(dirname(__DIR__)) . '/storage', // or you can use @alias
+            'secret' => 'my-secret', // for secure route url
+            // 'action' => '/site/file', // action route
+            // 'prefix' => '',
+        ],
+    ],
+];
+```
+
+### AsyncAws S3 Filesystem
+
+Either run
+
+```shell
+composer require league/flysystem-async-aws-s3:^3.0
+```
+
+or add
+
+```shell
+"league/flysystem-async-aws-s3": "^3.0"
+```
+
+to the `require` section of your `composer.json` file and configure application `components` as follows
+
+```php
+return [
+    // ...
+    'components' => [
+        // ...
+        'fs' => [
+            'class' => \diecoding\flysystem\AsyncAwsS3Component::class,
+            'endpoint' => 'http://your-endpoint',
+            'bucket' => 'my-bucket',
+            'accessKeyId' => 'my-key',
+            'accessKeySecret' => 'my-secret',
+            // 'sharedCredentialsFile' => '~/.aws/credentials',
+            // 'sharedConfigFile' => '~/.aws/config',
+            // 'region' => 'us-east-1',
+            // 'endpointDiscoveryEnabled' => false,
+            // 'pathStyleEndpoint' => false,
+            // 'sendChunkedBody' => false,
+            // 'debug' => false,
+            // 'prefix' => '',
         ],
     ],
 ];
@@ -83,7 +125,7 @@ composer require league/flysystem-aws-s3-v3:^3.0
 or add
 
 ```shell
-"league/flysystem-aws-s3-V3": "^3.0"
+"league/flysystem-aws-s3-v3": "^3.0"
 ```
 
 to the `require` section of your `composer.json` file and configure application `components` as follows
@@ -94,18 +136,19 @@ return [
     'components' => [
         // ...
         'fs' => [
-            'class'    => \diecoding\flysystem\AwsS3Component::class,
-            'endpoint' => 'http://your-endpoint'
-            'key'      => 'your-key',
-            'secret'   => 'your-secret',
-            'bucket'   => 'your-bucket',
-            'prefix'   => '',
-            // 'region'               => 'us-east-1'
-            // 'version'              => 'latest',
+            'class' => \diecoding\flysystem\AwsS3Component::class,
+            'endpoint' => 'http://your-endpoint',
+            'key' => 'your-key',
+            'secret' => 'your-secret',
+            'bucket' => 'your-bucket',
+            // 'region' => 'us-east-1'
+            // 'version' => 'latest',
             // 'usePathStyleEndpoint' => false,
-            // 'streamReads'          => false,
-            // 'options'              => [],
-            // 'credentials'          => [],
+            // 'streamReads' => false,
+            // 'options' => [],
+            // 'credentials' => [],
+            // 'debug' => false,
+            // 'prefix' => '',
         ],
     ],
 ];
@@ -122,7 +165,7 @@ composer require league/flysystem-ftp:^3.0
 or add
 
 ```shell
-"league/flysystem-aws-s3-V3": "^3.0"
+"league/flysystem-ftp": "^3.0"
 ```
 
 to the `require` section of your `composer.json` file and configure application `components` as follows
@@ -133,24 +176,25 @@ return [
     'components' => [
         // ...
         'fs' => [
-            'class'    => \diecoding\flysystem\FtpComponent::class,
-            'host'     => 'hostname',
-            'root'     => '/root/path/', // or you can use @alias
+            'class' => \diecoding\flysystem\FtpComponent::class,
+            'host' => 'hostname',
+            'root' => '/root/path/', // or you can use @alias
             'username' => 'username',
             'password' => 'password',
-            // 'port'                            => 21,
-            // 'ssl'                             => false,
-            // 'timeout'                         => 90,
-            // 'utf8'                            => false,
-            // 'passive'                         => true,
-            // 'transferMode'                    => FTP_BINARY,
-            // 'systemType'                      => null,         // 'windows' or 'unix'
-            // 'ignorePassiveAddress'            => null,         // true or false
+            // 'port' => 21,
+            // 'ssl' => false,
+            // 'timeout' => 90,
+            // 'utf8' => false,
+            // 'passive' => true,
+            // 'transferMode' => FTP_BINARY,
+            // 'systemType' => null, // 'windows' or 'unix'
+            // 'ignorePassiveAddress' => null, // true or false
             // 'timestampsOnUnixListingsEnabled' => false,
-            // 'recurseManually'                 => true,
-            // 'useRawListOptions'               => null,         // true or false
-            'action' => '/site/file', // action for get url file
-            'prefix' => '',
+            // 'recurseManually' => true,
+            // 'useRawListOptions' => null, // true or false
+            // 'passphrase' => 'secret', // for secure route url
+            // 'action' => '/site/file', // action route
+            // 'prefix' => '',
         ],
     ],
 ];
@@ -180,8 +224,8 @@ return [
             'class' => \diecoding\flysystem\SftpComponent::class,
             'host' => 'hostname',
             'username' => 'username',
-            // 'password' => null, // password (optional, default: null) set to null if privateKey is used
-            'privateKey' => '/path/to/my/private_key', // private key (optional, default: null) can be used instead of password, set to null if password is set
+            'password' => null, // password (optional, default: null) set to null if privateKey is used
+            // 'privateKey' => '/path/to/my/private_key', // private key (optional, default: null) can be used instead of password, set to null if password is set
             // 'passphrase' => 'super-secret-password', // passphrase (optional, default: null), set to null if privateKey is not used or has no passphrase
             // 'port' => 22,
             // 'useAgent' => true,
@@ -190,9 +234,76 @@ return [
             // 'hostFingerprint' => null,
             // 'connectivityChecker' => null, // connectivity checker (must be an implementation of `League\Flysystem\PhpseclibV2\ConnectivityChecker` to check if a connection can be established (optional, omit if you don't need some special handling for setting reliable connections)
             // 'preferredAlgorithms' => [],
-            'root' => '/root/path/', // or you can use @alias
-            'action' => '/site/file',
-            'prefix' => '',
+            // 'root' => '/root/path/', // or you can use @alias
+            // 'action' => '/site/file', // action route
+            // 'prefix' => '',
+        ],
+    ],
+];
+```
+
+### WebDAV Filesystem
+
+Either run
+
+```shell
+composer require league/flysystem-webdav:^3.0
+```
+
+or add
+
+```shell
+"league/flysystem-webdav": "^3.0"
+```
+
+to the `require` section of your `composer.json` file and configure application `components` as follows
+
+```php
+return [
+    // ...
+    'components' => [
+        // ...
+        'fs' => [
+            'class' => \diecoding\flysystem\WebDavComponent::class,
+            'baseUri' => 'http://your-webdav-server.org/',
+            'userName' => 'your_user',
+            'password' => 'superSecret1234',
+            // 'proxy' => '',
+            // 'authType' => \Sabre\DAV\Client::AUTH_BASIC,
+            // 'encoding' => \Sabre\DAV\Client::ENCODING_IDENTITY,
+            // 'prefix' => '',
+        ],
+    ],
+];
+```
+
+### ZipArchive Filesystem
+
+Either run
+
+```shell
+composer require league/flysystem-ziparchive:^3.0
+```
+
+or add
+
+```shell
+"league/flysystem-ziparchive": "^3.0"
+```
+
+to the `require` section of your `composer.json` file and configure application `components` as follows
+
+```php
+return [
+    // ...
+    'components' => [
+        // ...
+        'fs' => [
+            'class' => \diecoding\flysystem\ZipArchiveComponent::class,
+            'pathToZip' => dirname(dirname(__DIR__)) . '/storage.zip', // or you can use @alias
+            'secret' => 'my-secret', // for secure route url
+            // 'action' => '/site/file', // action route
+            // 'prefix' => '', // root directory inside zip file
         ],
     ],
 ];
@@ -467,6 +578,9 @@ Yii::$app->fs->checksum('path/to/directory/filename.ext');
 Attach the Trait to the `Model/ActiveRecord` with some media attribute that will be saved in Flysystem (fs):
 
 ```php
+/**
+ * @property string|null $file
+ */
 class Model extends \yii\db\ActiveRecord
 {
     use \diecoding\flysystem\traits\ModelTrait;
@@ -480,6 +594,9 @@ class Model extends \yii\db\ActiveRecord
         ];
     }
 
+    /**
+     * @inheritdoc
+     */
     protected function attributePaths()
     {
         return [
@@ -585,7 +702,7 @@ protected function getPresignedUrlDuration($attribute)
         case 'badge':
             return new \DateTimeImmutable('+2 Hours');
             break;
-
+        
         default:
             return new \DateTimeImmutable('+1 Days');
             break;
