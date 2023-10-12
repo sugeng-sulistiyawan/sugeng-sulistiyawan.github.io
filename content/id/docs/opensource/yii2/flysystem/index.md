@@ -578,9 +578,6 @@ Yii::$app->fs->checksum('path/to/directory/filename.ext');
 Attach the Trait to the `Model/ActiveRecord` with some media attribute that will be saved in Flysystem (fs):
 
 ```php
-/**
- * @property string|null $file
- */
 class Model extends \yii\db\ActiveRecord
 {
     use \diecoding\flysystem\traits\ModelTrait;
@@ -594,9 +591,6 @@ class Model extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
     protected function attributePaths()
     {
         return [
@@ -702,7 +696,7 @@ protected function getPresignedUrlDuration($attribute)
         case 'badge':
             return new \DateTimeImmutable('+2 Hours');
             break;
-        
+
         default:
             return new \DateTimeImmutable('+1 Days');
             break;
