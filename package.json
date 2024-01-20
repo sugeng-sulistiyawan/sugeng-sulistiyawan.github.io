@@ -3,7 +3,7 @@
   "description": "Sugeng Sulistiyawan Portfolio",
   "version": "1.0.0",
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=18.16.0"
   },
   "browserslist": [
     "defaults"
