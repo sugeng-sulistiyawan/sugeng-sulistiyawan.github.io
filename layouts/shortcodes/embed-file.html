@@ -1,0 +1,10 @@
+{{ if .IsNamedParams }}
+  {{ if eq "microsoft" (.Get "viewer") }}
+    <iframe src='https://view.officeapps.live.com/op/embed.aspx?src={{ .Get "src" }}' frameborder="no" style="width:100%;min-height:460px"></iframe>
+  {{ else }}
+    <iframe src='https://docs.google.com/viewer?url={{ .Get "src" }}&embedded=true&hl=en' frameborder="no" style="width:100%;min-height:460px"></iframe>
+  {{ end }}
+{{ else }}
+  <iframe src="https://docs.google.com/viewer?url={{ .Get 0 }}&embedded=true&hl=en" frameborder="no" style="width:100%;min-height:460px"></iframe>
+{{ end }}
+
