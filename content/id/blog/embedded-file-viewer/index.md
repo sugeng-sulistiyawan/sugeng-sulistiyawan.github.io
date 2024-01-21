@@ -42,7 +42,7 @@ function fm_enc($text)
 ...
 ```
 
-## Office Apps (microsoft) Viewer
+## Office Apps (Microsoft) Viewer
 
 **('.ppt' '.pptx' '.doc', '.docx', '.xls', '.xlsx')**
 
@@ -150,7 +150,7 @@ Result:
 <iframe src="https://docs.google.com/viewer?srcid=[FILE_ID_UNIQUE]&pid=explorer&efh=false&a=v&chrome=false&embedded=true" frameborder="no" style="width:100%;min-height:460px"></iframe>
 ```
 
-## REAL EXAMPLE USING GOOGLE DRIVE
+### REAL EXAMPLE USING GOOGLE DRIVE | PDF
 
 ```html
 <iframe src="https://docs.google.com/viewer?url=https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf&embedded=true&hl=en" frameborder="no" style="width:100%;min-height:460px"></iframe>
@@ -158,10 +158,10 @@ Result:
 
 {{< embed-file src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" viewer="google" >}}
 
-## REAL EXAMPLE USING OFFICE APPS (MICROSOFT)
+### REAL EXAMPLE USING OFFICE APPS (MICROSOFT) | PPT
 
 ```html
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf' frameborder="no" style="width:100%;min-height:460px"></iframe>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://scholar.harvard.edu/files/torman_personal/files/samplepptx.pptx' frameborder="no" style="width:100%;min-height:460px"></iframe>
 ```
 
-{{< embed-file src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" viewer="microsoft" >}}
+{{< embed-file src="https://scholar.harvard.edu/files/torman_personal/files/samplepptx.pptx" viewer="microsoft" >}}
