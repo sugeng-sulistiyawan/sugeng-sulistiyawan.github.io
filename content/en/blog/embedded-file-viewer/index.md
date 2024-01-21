@@ -161,7 +161,7 @@ Result:
 ### REAL EXAMPLE USING OFFICE APPS (MICROSOFT) | PPT
 
 ```html
-<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://scholar.harvard.edu/files/torman_personal/files/samplepptx.pptx' frameborder="no" style="width:100%;min-height:460px"></iframe>
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://sample-videos.com/ppt/Sample-PPT-File-500kb.ppt' frameborder="no" style="width:100%;min-height:460px"></iframe>
 ```
 
-{{< embed-file src="https://scholar.harvard.edu/files/torman_personal/files/samplepptx.pptx" viewer="microsoft" >}}
+{{< embed-file src="https://sample-videos.com/ppt/Sample-PPT-File-500kb.ppt" viewer="microsoft" >}}
