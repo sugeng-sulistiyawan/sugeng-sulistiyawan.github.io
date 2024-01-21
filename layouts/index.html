@@ -34,149 +34,109 @@
 
       <h3 class="mb-3"><strong>Technology, Language and Tools I Use</strong></h3>
 
-      <div class="row justify-content-center">
+      <div class="my-5">
 
-        <div class="col-sm-6 col-lg-4">
-          <h5 class="mb-3"><strong>Core</strong></h5>
-          {{ range $technology := sort (index $.Site.Data "technologies" "cores") "id" "asc" }}
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-10">
+            {{ range $technology := sort (index $.Site.Data "technologies") "id" "asc" }}
 
-          {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
+            {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
 
-          {{ $url := "#" }}
-          {{ $target := "_self" }}
-          {{ if $technology.url }}
-          {{ $url = $technology.url }}
-          {{ $target = "_blank" }}
-          {{ end }}
+            {{ $url := "#" }}
+            {{ $target := "_self" }}
+            {{ if $technology.url }}
+            {{ $url = $technology.url }}
+            {{ $target = "_blank" }}
+            {{ end }}
 
-          <a href="{{ $url }}" target="{{ $target }}" rel="noopener noreferrer" title="{{ $technology.title }}"
-            class="d-inline-block m-1">
-            <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
-          </a>
+            <a href="{{ $url }}" target="{{ $target }}" rel="noopener noreferrer" title="{{ $technology.title }}"
+              class="d-inline-block m-1">
+              <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
+            </a>
 
-          {{ end }}
+            {{ end }}
+
+          </div>
         </div>
-        <div class="col-sm-6 col-lg-4">
-          <h5 class="mb-3"><strong>Framework/Library</strong></h5>
-          {{ range $technology := sort (index $.Site.Data "technologies" "frameworks") "id" "asc" }}
+      </div>
 
-          {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
+      <div class="position-absolute w-100" style="left: 0; z-index: -1">
+        <div class="bg-dots" style="height: 15rem;"></div>
+      </div>
 
-          {{ $url := "#" }}
-          {{ $target := "_self" }}
-          {{ if $technology.url }}
-          {{ $url = $technology.url }}
-          {{ $target = "_blank" }}
-          {{ end }}
+      <div class="row justify-content-center align-items-center gap-3">
 
-          <a href="{{ $url }}" target="{{ $target }}" rel="noopener noreferrer" title="{{ $technology.title }}"
-            class="d-inline-block m-1">
-            <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
-          </a>
+        {{ range $main := index $.Site.Data "stats" "main" }}
 
-          {{ end }}
-        </div>
-        <div class="col-sm-12 col-lg-8">
-          <h5 class="mb-3"><strong>Tools/Software/Technology</strong></h5>
-          {{ range $technology := sort (index $.Site.Data "technologies" "tools") "id" "asc" }}
-
-          {{ $src := printf "images/icons/%s.svg" $technology.id | absURL }}
-
-          {{ $url := "#" }}
-          {{ $target := "_self" }}
-          {{ if $technology.url }}
-          {{ $url = $technology.url }}
-          {{ $target = "_blank" }}
-          {{ end }}
-
-          <a href="{{ $url }}" target="{{ $target }}" rel="noopener noreferrer" title="{{ $technology.title }}"
-            class="d-inline-block m-1">
-            <img height="32" src="{{ $src }}" alt="{{ $technology.title }}" />
-          </a>
-
-          {{ end }}
+        <div class="{{ $main.col }}">
+          <img src="{{ $main.stat }}&hide_border=true&theme=buefy&bg_color=00000000"
+            class="{{ $main.class }} show-light hide-dark" />
+          <img src="{{ $main.stat }}&hide_border=true&theme=dark&bg_color=00000000"
+            class="{{ $main.class }} show-dark hide-light" />
         </div>
 
-      </div>
-    </div>
+        {{ end }}
 
-    <div class="position-absolute w-100" style="left: 0; z-index: -1">
-      <div class="bg-dots" style="height: 15rem;"></div>
-    </div>
-
-    <div class="row justify-content-center align-items-center gap-3">
-
-      {{ range $main := index $.Site.Data "stats" "main" }}
-
-      <div class="{{ $main.col }}">
-        <img src="{{ $main.stat }}&hide_border=true&theme=buefy&bg_color=00000000"
-          class="{{ $main.class }} show-light hide-dark" />
-        <img src="{{ $main.stat }}&hide_border=true&theme=dark&bg_color=00000000"
-          class="{{ $main.class }} show-dark hide-light" />
       </div>
 
-      {{ end }}
-
-    </div>
-
-    <div class="text-center mb-2">
-      <hr>
-      <h3 class="mt-5"><strong>Top Repositories</strong></h3>
-    </div>
-
-    <div class="row justify-content-center align-items-center gap-3">
-
-      {{ range $top := index $.Site.Data "stats" "top" }}
-
-      <div class="col-lg-6">
-        <a href="{{ $top.url }}" target="_blank" rel="noopener noreferrer">
-          <img src="{{ $top.stat }}&hide_border=true&theme=yeblu" class="w-100 show-light hide-dark" />
-          <img src="{{ $top.stat }}&hide_border=true&theme=swift" class="w-100 show-dark hide-light" />
-        </a>
+      <div class="text-center mb-2">
+        <hr>
+        <h3 class="mt-5"><strong>Top Repositories</strong></h3>
       </div>
 
-      {{ end }}
+      <div class="row justify-content-center align-items-center gap-3">
 
-      <div class="clearfix"></div>
+        {{ range $top := index $.Site.Data "stats" "top" }}
 
-      {{ range $pin := index $.Site.Data "stats" "pin" }}
+        <div class="col-lg-6">
+          <a href="{{ $top.url }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ $top.stat }}&hide_border=true&theme=yeblu" class="w-100 show-light hide-dark" />
+            <img src="{{ $top.stat }}&hide_border=true&theme=swift" class="w-100 show-dark hide-light" />
+          </a>
+        </div>
 
-      <div class="col-lg-6">
-        <a href="https://github.com/sugeng-sulistiyawan/{{ $pin }}" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=swift"
-            class="w-100 show-light hide-dark" />
-          <img
-            src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=aura"
-            class="w-100 show-dark hide-light" />
-        </a>
+        {{ end }}
+
+        <div class="clearfix"></div>
+
+        {{ range $pin := index $.Site.Data "stats" "pin" }}
+
+        <div class="col-lg-6">
+          <a href="https://github.com/sugeng-sulistiyawan/{{ $pin }}" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=swift"
+              class="w-100 show-light hide-dark" />
+            <img
+              src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $pin }}&hide_border=true&theme=aura"
+              class="w-100 show-dark hide-light" />
+          </a>
+        </div>
+
+        {{ end }}
       </div>
 
-      {{ end }}
-    </div>
-
-    <div class="text-center mb-2">
-      <hr>
-      <h3 class="mt-5"><strong>On Development</strong></h3>
-    </div>
-
-    <div class="row justify-content-center align-items-center gap-3">
-
-      {{ range $dev := index $.Site.Data "stats" "dev" }}
-
-      <div class="col-lg-6">
-        <a href="https://github.com/sugeng-sulistiyawan/{{ $dev }}" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $dev }}&hide_border=true&theme=moltack"
-            class="w-100 show-light hide-dark" />
-          <img
-            src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $dev }}&hide_border=true&theme=algolia"
-            class="w-100 show-dark hide-light" />
-        </a>
+      <div class="text-center mb-2">
+        <hr>
+        <h3 class="mt-5"><strong>On Development</strong></h3>
       </div>
 
-      {{ end }}
-    </div>
+      <div class="row justify-content-center align-items-center gap-3">
+
+        {{ range $dev := index $.Site.Data "stats" "dev" }}
+
+        <div class="col-lg-6">
+          <a href="https://github.com/sugeng-sulistiyawan/{{ $dev }}" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $dev }}&hide_border=true&theme=moltack"
+              class="w-100 show-light hide-dark" />
+            <img
+              src="https://github-readme-stats.vercel.app/api/pin/?username=sugeng-sulistiyawan&repo={{ $dev }}&hide_border=true&theme=algolia"
+              class="w-100 show-dark hide-light" />
+          </a>
+        </div>
+
+        {{ end }}
+      </div>
 
 </section>
 {{ end }}
