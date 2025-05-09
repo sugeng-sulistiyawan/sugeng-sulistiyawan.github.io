@@ -19,4 +19,4 @@ Simple template Error Page Html with custom color css.
 
 ### Demo & Preview
 
-> [https://sugengsulistiyawan.my.id/ErrorPageHtml/](https://sugengsulistiyawan.my.id/ErrorPageHtml/)
+> [https://sugeng-sulistiyawan.github.io/ErrorPageHtml/](https://sugeng-sulistiyawan.github.io/ErrorPageHtml/)

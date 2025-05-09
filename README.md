@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://sugengsulistiyawan.my.id/">
+  <a href="https://sugeng-sulistiyawan.github.io/">
     <img alt="Sugeng Sulistiyawan" src="static/logo.png" width="80">
   </a>
 </p>
 
 <h1 align="center">
   <strong>Sugeng Sulistiyawan</strong><br>
-  <img src="https://img.shields.io/website?down_message=Offline&label=sugengsulistiyawan.my.id&up_message=Online&url=https%3A%2F%2Fsugengsulistiyawan.my.id">
+  <img src="https://img.shields.io/website?down_message=Offline&label=sugeng-sulistiyawan.github.io&up_message=Online&url=https%3A%2F%2Fsugeng-sulistiyawan.github.io">
 </h1>
 
 ## Requirements

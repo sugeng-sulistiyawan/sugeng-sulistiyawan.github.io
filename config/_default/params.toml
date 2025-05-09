@@ -12,7 +12,7 @@ description = "Always Learning and Keep Learning."
 ## Open Graph
 images = ["og.png"]
 ogLocale = "en_US"
-domainTLD = "sugengsulistiyawan.my.id"
+domainTLD = "sugeng-sulistiyawan.github.io"
 titleHome = "Sugeng Sulistiyawan"
 
 ## Twitter Cards
